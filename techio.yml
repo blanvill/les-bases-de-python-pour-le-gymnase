@@ -1,4 +1,4 @@
-title: Recueil d'exercices pour apprendre Python au lycée
+title: Apprendre Python dans le secondaire
 plan:
 - title: Présentation
   plan:
@@ -200,8 +200,6 @@ plan:
     statement: Maths/methode_rectangles.md
   - title: La méthode des trapèzes
     statement: Maths/Methode_trapèzes.md
-  
-  
 - title: Physique et programmation
   plan:
   - title: Introduction
@@ -296,7 +294,7 @@ plan:
     statement: Projets/2048.md
   - title: Exemple du Sudoku
     statement: Projets/Sudoku.md
-- title : Forum des Mathématiques
+- title: Forum des Mathématiques
   plan:
   - title: Jeu de nim - Fibonacci
     statement: Autre/nim_fibonacci.md
@@ -306,13 +304,9 @@ plan:
     statement: Autre/Epicycloides.md
   - title: Jeu de Light Out
     statement: Autre/Lightout.md
-  #- title: Test
-  #  statement: Autre/test.md
 projects:
   python:
-    buildCommand: pip install numpy matplotlib Pillow; pip install scipy numba 
-    #buildCommand: echo 'export PYTHONPATH=/project/target/modules' >> /root/.profile; echo 'export PYTHONPATH=$PYTHONPATH:/project/target/modules' >> /root/.bashrc;. ~/.bashrc
-    #buildCommand: cp -r /project/target/modules/* /usr/local/lib/python3.7/site-packages #Pour copier directement les modules au lieu de les importer mais problemes de versions...
+    buildCommand: pip install numpy matplotlib Pillow; pip install scipy numba
     root: /python-project
     runner:
       name: python
