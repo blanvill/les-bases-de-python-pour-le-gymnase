@@ -57,9 +57,9 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   ```
 
 + On peut aussi réaliser facilement des divisions euclidiennes (c'est à dire les divisions posées comme au primaire). 
-  - Pour obtenir le ***quotient*** de la division de `a` par `b`, il suffit d'écrire `a//b`.
-  - Pour obtenir le ***reste*** de la division de `a` par `b`, il suffit d'écrire `a%b`.  
-  Remarque : La différence entre `a/b`et `a//b`est que le premier donne une valeur approchée décimale à 16 chiffres après la virgule alors que la deuxième nous donne l'***entier*** q tel que 0 <= a-bq < b.  
+  - Pour obtenir le ***quotient*** de la division de `a` par `b`, il suffit d'écrire `a // b`.
+  - Pour obtenir le ***reste*** de la division de `a` par `b`, il suffit d'écrire `a % b`.  
+  Remarque : La différence entre `a / b`et `a // b`est que le premier donne une valeur approchée décimale à 16 chiffres après la virgule alors que la deuxième nous donne l'***entier*** q tel que 0 <= a-bq < b.  
   Voici quelques exemples que vous pouvez modifier pour vérifier que vous avez bien compris.
   ```python runnable
   a=17
@@ -67,7 +67,7 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   print(a//b) # Affiche le quotient de la division euclidienne de a par b
   print(a%b) # Affiche le reste de la division euclidienne de a par b
   ```
-  Remarque : Même si ces opérations sont finalement assez peu utilisée en cours de mathématiques, elles le sont beaucoup plus en informatique, principalement le calcul du reste de la division euclidienne. Par exemple pour déterminer si un nombre est pair, il suffit de regarder si `x%2` vaut 0. En effet, un nombre est pair si et seulement si son reste par la division par 2 est nul. On l'utilisera régulièrement dans les exercices.
+  Remarque : Même si ces opérations sont finalement assez peu utilisée en cours de mathématiques, elles le sont beaucoup plus en informatique, principalement le calcul du reste de la division euclidienne. Par exemple pour déterminer si un nombre est pair, il suffit de regarder si `x % 2` vaut 0. En effet, un nombre est pair si et seulement si son reste par la division par 2 est nul. On l'utilisera régulièrement dans les exercices.
   
 # Troisième partie : QCM
 
