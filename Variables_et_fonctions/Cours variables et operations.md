@@ -19,9 +19,9 @@ b=7
 c=b+a+2
 print(c)
 ```
-On voit s'afficher la valeur de c. 
+On voit s'afficher la valeur de `c`. 
 
-Petite subtilité avec les variables : On peut utiliser une certaine variable a pour faire un calcul et stocker la réponse de nouveau dans a ce qui aura pour effet de faire disparaitre la première valeur de a. C'est très pratique pour éviter d'utiliser trop de variables différentes par exemple.
+Petite subtilité avec les variables : On peut utiliser une certaine variable `a` pour faire un calcul et stocker la réponse de nouveau dans `a` ce qui aura pour effet de faire disparaitre la première valeur de `a`. C'est très pratique pour éviter d'utiliser trop de variables différentes par exemple.
 ```python runnable
 a=3
 a=a+2
@@ -29,7 +29,7 @@ print(a)
 a=a+a
 print(a)
 ```
-Petite explication des résultats affichés : Au début *a* vaut 3, on lui ajoute 2 et on stocke dans *a* donc maintenant *a* vaut 5, ce qu'on affiche en premier. Ensuite on calcule *a+a* donc 5+5=10 qu'on stocke de nouveau dans *a*, d'où l'affichage du 10 en deuxième.
+Petite explication des résultats affichés : Au début `a` vaut 3, on lui ajoute 2 et on stocke dans `a` donc maintenant `a` vaut 5, ce qu'on affiche en premier. Ensuite on calcule `a+a` donc 5+5=10 qu'on stocke de nouveau dans `a`, d'où l'affichage du 10 en deuxième.
 
 
 # Deuxième partie : Les opérations sur les variables numériques
@@ -47,8 +47,8 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   ```
 + Les deux autres opérations qu'on utilise couramment sont les puissances et la racine carrée.  
   - Pour les ***puissances***, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.  
-  - Pour la ***racine carrée***, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre x, il suffit d'écrire `x**0.5`.  
-  Voici quelques exemples. On a rajouté des commentaires à coté des instructions d'affichage des calculs pour que ces instructions soient plus claires. Pour écrire un commentaire, il suffit de mettre un # devant. Tout ce qui suit le # ne sera pas executé par l'ordinateur et ne sert donc qu'à la personne qui lit le programme.
+  - Pour la ***racine carrée***, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre `x`, il suffit d'écrire `x**0.5`.  
+  Voici quelques exemples. On a rajouté des commentaires à coté des instructions d'affichage des calculs pour que ces instructions soient plus claires. Pour écrire un commentaire, il suffit de mettre un `#` devant. Tout ce qui suit le `#` ne sera pas executé par l'ordinateur et ne sert donc qu'à la personne qui lit le programme.
   ```python runnable
   print(2**3) # Affiche le résultat de 2 puissance 3
   print(3**2) # Affiche le résultat de 3 puissance 2
@@ -57,8 +57,8 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   ```
 
 + On peut aussi réaliser facilement des divisions euclidiennes (c'est à dire les divisions posées comme au primaire). 
-  - Pour obtenir le ***quotient*** de la division de a par b, il suffit d'écrire `a//b`.
-  - Pour obtenir le ***reste*** de la division de a par b, il suffit d'écrire `a%b`.  
+  - Pour obtenir le ***quotient*** de la division de `a` par `b`, il suffit d'écrire `a//b`.
+  - Pour obtenir le ***reste*** de la division de `a` par `b`, il suffit d'écrire `a%b`.  
   Remarque : La différence entre `a/b`et `a//b`est que le premier donne une valeur approchée décimale à 16 chiffres après la virgule alors que la deuxième nous donne l'***entier*** q tel que 0 <= a-bq < b.  
   Voici quelques exemples que vous pouvez modifier pour vérifier que vous avez bien compris.
   ```python runnable
@@ -151,9 +151,11 @@ Le but de cet exercice est de suivre un programme de calcul en partant d'un enti
 
 Appuyez sur Run et suivez les instructions qui s'affichent.
 
-N'effacez pas ce que vous avez fait juste. Il faut rajouter au fur et à mesure en dessous.
+Remplacez le mot-clé `pass` par votre code.
+Ajoutez au fur et à mesure ce qu'on vous demande dans les instructions en dessous.
+N'effacez rien de ce que vous écrivez... sauf si ce n'est pas juste.
 
-Quand on demande d'afficher, c'est avec `print`.
+Quand on vous demande d'afficher, utilisez la fonction `print`.
 
 @[Programme de calcul]({"stubs": ["Variables_et_fonctions/Programme_calcul.py"], "command": "python3 Variables_et_fonctions/Programme_calcul_Test.py"})
 
@@ -165,9 +167,11 @@ La consigne de cet exercice est identique au précédent.
 
 Appuyez sur Run et suivez les instructions qui s'affichent.
 
-N'effacez pas ce que vous avez fait juste. Il faut rajouter au fur et à mesure en dessous.
+NRemplacez le mot-clé `pass` par votre code.
+Ajoutez au fur et à mesure ce qu'on vous demande dans les instructions en dessous.
+N'effacez rien de ce que vous écrivez... sauf si ce n'est pas juste.
 
-Quand on demande d'afficher, c'est avec `print`.
+Quand on vous demande d'afficher, utilisez la fonction `print`.
 
 @[Programme de calcul]({"stubs": ["Variables_et_fonctions/Programme_calcul1.py"], "command": "python3 Variables_et_fonctions/Programme_calcul1_Test.py"})
 
