@@ -135,7 +135,7 @@ aire(1.7,2.5)
 
 ###### Exercice 1 : Calcul de la valeur d'une fonction
 
-Ecrire une fonction qu'on nommera `f` qui prend en paramètre un nombre `x` et qui renvoie le résultat de $`3x²+4x-5`$
+Ecrire une fonction qu'on nommera `f()` qui prend en paramètre un nombre `x` et qui renvoie le résultat de $`3x²+4x-5`$
 
 @[Calcul de la valeur d'une fonction]({"stubs": ["Les_fonctions/Calcul_valeur.py"], "command": "python3 Les_fonctions/Calcul_valeur_Test.py"})
 
@@ -143,7 +143,7 @@ Ecrire une fonction qu'on nommera `f` qui prend en paramètre un nombre `x` et q
 
 ###### Exercice 2 : Calcul du volume d'un pavé
 
-Ecrire une fonction qu'on nommera `volume` qui prend en paramètres trois nombres `longueur`, `largeur` et `hauteur` (dans cet ordre) et qui renvoie le volume d'un pavé droit dont les dimensions sont ces trois nombres.
+Ecrire une fonction qu'on nommera `volume()` qui prend en paramètres trois nombres `longueur`, `largeur` et `hauteur` (dans cet ordre) et qui renvoie le volume d'un pavé droit dont les dimensions sont ces trois nombres.
 
 @[Calcul du volume d'un pavé]({"stubs": ["Les_fonctions/Calcul_volume.py"], "command": "python3 Les_fonctions/Calcul_volume_Test.py"})
 
