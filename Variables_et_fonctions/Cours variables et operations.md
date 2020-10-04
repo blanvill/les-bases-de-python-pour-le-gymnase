@@ -22,8 +22,8 @@ print(c)
 ```
 On voit s'afficher la valeur de `c`. 
 
->**Fondamental** 
->On peut utiliser une certaine variable `a` pour faire un calcul et stocker la réponse de nouveau dans `a` ce qui aura pour effet de faire disparaitre la première valeur de `a`. C'est très pratique pour éviter d'utiliser trop de variables différentes par exemple.
+>**Fondamental**. 
+On peut utiliser une certaine variable `a` pour faire un calcul et stocker la réponse de nouveau dans `a` ce qui aura pour effet de faire disparaitre la première valeur de `a`. C'est très pratique pour éviter d'utiliser trop de variables différentes par exemple.
 ```python runnable
 a = 3
 a = a + 2
