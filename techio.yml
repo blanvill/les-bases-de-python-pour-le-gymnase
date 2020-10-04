@@ -10,20 +10,16 @@ plan:
   plan:
   - title: Cours - Variables et opérations
     statement: Variables_et_fonctions/Cours variables et operations.md
-  - title: Cours - Introduction aux fonctions
-    statement: Variables_et_fonctions/Cours introduction fonction.md
-  - title: Cours - Module math
-    statement: Variables_et_fonctions/Cours module math.md
   - title: Compléments sur les variables et opérations
     statement: Variables_et_fonctions/Complements.md
   - title: Cours - Les conditions
     statement: Les_conditions/Cours conditions.md
+  - title: Cours - Les boucles while
+    statement: Les_boucles/Cours boucles while.md
   - title: Cours - Les boucles for
     statement: Les_boucles/presentation_for.md
   - title: Compléments sur les boucles
     statement: Les_boucles/Complements boucles.md
-  - title: Cours - Les boucles while
-    statement: Les_boucles/Cours boucles while.md
   - title: Cours - Les chaines de caractères
     statement: Chaines_caracteres/Cours chaine de caracteres.md
   - title: Compléments sur les chaines de caractères
@@ -35,17 +31,21 @@ plan:
   - title: Manipulations de base
     statement: Les_listes/Manipulations de base.md
   - title: Cours - Compléments sur les fonctions
-    statement: Les_fonctions/Cours fonctions.md
-  - title: Cours - Le module random
+  - title: Cours - Module math
+    statement: Variables_et_fonctions/Cours module math.md
+  - title: Cours - Module random
     statement: Maths/Cours module random.md
+  - title: Cours - Introduction aux fonctions
+    statement: Variables_et_fonctions/Cours introduction fonction.md
+    statement: Les_fonctions/Cours fonctions.md
+  - title: Cours - Les classes en Python
+    statement: Cours/Classes.md
   - title: Cours - Représentation graphique avec matplotlib
     statement: Maths/Cours module matplotlib.md
   - title: Compléments sur le module matplotlib
     statement: Maths/Complements_matplotlib.md
   - title: Cours - Régressions linéaires et d'ordres supérieurs
     statement: Maths/Regression.md
-  - title: Cours - Les classes en Python
-    statement: Cours/Classes.md
 - title: Classe de Seconde
   plan:
   - title: Introduction
