@@ -35,6 +35,7 @@ plan:
   - title: Cours - Compléments sur les fonctions
     statement: Les_fonctions/Cours fonctions.md
 - title: Les modules Python
+  plan:
   - title: Cours - Module math
     statement: Variables_et_fonctions/Cours module math.md
   - title: Cours - Module random
@@ -46,6 +47,7 @@ plan:
   - title: Cours - Régressions linéaires et d'ordres supérieurs
     statement: Maths/Regression.md
 - title: Programmation Orientée Objet
+  plan:
   - title: Cours - Les classes en Python
     statement: Cours/Classes.md
 - title: Classe de Seconde
