@@ -22,8 +22,9 @@ print(c)
 ```
 On voit s'afficher la valeur de `c`. 
 
-** Fondamental ** 
-On peut utiliser une certaine variable `a` pour faire un calcul et stocker la réponse de nouveau dans `a` ce qui aura pour effet de faire disparaitre la première valeur de `a`. C'est très pratique pour éviter d'utiliser trop de variables différentes par exemple.
+>**Fondamental** 
+
+>On peut utiliser une certaine variable `a` pour faire un calcul et stocker la réponse de nouveau dans `a` ce qui aura pour effet de faire disparaitre la première valeur de `a`. C'est très pratique pour éviter d'utiliser trop de variables différentes par exemple.
 ```python runnable
 a = 3
 a = a + 2
@@ -49,8 +50,8 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   ```
 
 + Les deux autres opérations qu'on utilise couramment sont les puissances et la racine carrée.  
-  - Pour les ***puissances***, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.  
-  - Pour la ***racine carrée***, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre `x`, il suffit d'écrire `x**0.5`.  
+  - Pour les _puissances_, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.  
+  - Pour la _racine carrée_, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre `x`, il suffit d'écrire `x**0.5`.  
   
   Voici quelques exemples. 
   On a ajouté des commentaires à coté des instructions d'affichage des calculs pour que ces instructions soient plus claires. Pour écrire un commentaire, il suffit de mettre un `#` (hashtag) devant. Tout ce qui suit le `#` ne sera pas executé par python et ne sert donc qu'à la personne qui lit le programme.
@@ -62,9 +63,11 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   ```
 
 + On peut aussi réaliser facilement des divisions euclidiennes (c'est-à-dire les divisions posées comme au primaire). 
-  - Pour obtenir le ***quotient*** de la division de `a` par `b`, il suffit d'écrire `a // b`.
-  - Pour obtenir le ***reste*** de la division de `a` par `b`, il suffit d'écrire `a % b`.  
-  Remarque : La différence entre `a / b`et `a // b`est que le premier donne une valeur approchée décimale à 16 chiffres après la virgule alors que la deuxième nous donne l'***entier*** q tel que 0 <= a-bq < b.  
+  - Pour obtenir le _quotient_ de la division de `a` par `b`, il suffit d'écrire `a // b`.
+  - Pour obtenir le _reste_ de la division de `a` par `b`, il suffit d'écrire `a % b`.  
+  
+  Remarque : La différence entre `a / b`et `a // b`est que le premier donne une valeur approchée décimale à 16 chiffres après la virgule alors que la deuxième nous donne l'_entier_ q tel que 0 <= a-bq < b.  
+  
   Voici quelques exemples que vous pouvez modifier pour vérifier que vous avez bien compris.
   ```python runnable
   a = 17
