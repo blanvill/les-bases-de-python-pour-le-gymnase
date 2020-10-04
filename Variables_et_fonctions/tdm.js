@@ -40,7 +40,7 @@ function tdm(replace, tdmHeadingLevel, minHeadingLevel, maxHeadingLevel) {
 	// Label for the link back to the contents
 	var backToContentsLabel = "retour";
 	// Label for table of contents section
-	var tdmLabel = "Table des matières";
+	var tdmLabel = "Table des matiÃ¨res";
 
 	// Create a <div> element that is the root of the tdm tree
 	var tdm = document.createElement("div");

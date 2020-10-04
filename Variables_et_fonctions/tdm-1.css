@@ -1,10 +1,10 @@
-@charset "iso-8859-1";
+@charset "utf-8";
 
 
 /*	<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
-	T O U S   T Y P E S   D E   M É D I A S
+	T O U S   T Y P E S   D E   M Ã‰ D I A S
 
 
 	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -12,42 +12,42 @@
 
 @media all {
 
-	/* Le titre de la table des matières			*/
+	/* Le titre de la table des matiÃ¨res			*/
 
 #tdm-titre
 	{
 	
 	}
 
-	/* Le corps de la table des matières (sans le titre)	*/
+	/* Le corps de la table des matiÃ¨res (sans le titre)	*/
 
 #tdm-corps
 	{
 	font-size:					0.8em;
 	}
 
-	/* Une entrée de la table des matières			*/
+	/* Une entrÃ©e de la table des matiÃ¨res			*/
 
 .tdm-item
 	{
 	
 	}
 
-	/* Le numéro (puce) d'une entrée			*/
+	/* Le numÃ©ro (puce) d'une entrÃ©e			*/
 
 .tdm-item-no
 	{
 	
 	}
 
-	/* Le texte d'une entrée (sans la puce)			*/
+	/* Le texte d'une entrÃ©e (sans la puce)			*/
 
 .tdm-item-texte
 	{
 	
 	}
 
-	/* Les niveaux d'entrées				*/
+	/* Les niveaux d'entrÃ©es				*/
 
 .tdm-niveau-1
 	{
@@ -79,7 +79,7 @@
 	margin-left:					5em;
 	}
 
-	/* Lien de retour vers la table des matières		*/
+	/* Lien de retour vers la table des matiÃ¨res		*/
 
 .tdm-retour
 	{
@@ -87,7 +87,7 @@
 	float:						right;
 	}
 
-	/* Le numéro (puce) d'un titre dans la page		*/
+	/* Le numÃ©ro (puce) d'un titre dans la page		*/
 
 .section-no
 	{
@@ -98,14 +98,14 @@
 
 /* 	==========================================================================
 
-	Exemple de table des matières générée
+	Exemple de table des matiÃ¨res gÃ©nÃ©rÃ©e
 
 
 <div id="tdm">
-    <h2 id="tdm-titre">Table des matières</h2>
+    <h2 id="tdm-titre">Table des matiÃ¨res</h2>
     <div id="tdm-corps">
         <div class="tdm-item tdm-niveau-1">
-            <span class="tdm-item-no">1.</span> <span class="tdm-item-texte"><a href="#SECT1.">Résumé</a></span>
+            <span class="tdm-item-no">1.</span> <span class="tdm-item-texte"><a href="#SECT1.">RÃ©sumÃ©</a></span>
         </div>
         <div class="tdm-item tdm-niveau-1">
             <span class="tdm-item-no">2.</span> <span class="tdm-item-texte"><a href="#SECT2.">Introduction</a></span>
