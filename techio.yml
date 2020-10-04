@@ -30,13 +30,13 @@ plan:
     statement: Les_listes/Complements listes.md
   - title: Manipulations de base
     statement: Les_listes/Manipulations de base.md
-  - title: Cours - Compléments sur les fonctions
   - title: Cours - Module math
     statement: Variables_et_fonctions/Cours module math.md
   - title: Cours - Module random
     statement: Maths/Cours module random.md
   - title: Cours - Introduction aux fonctions
     statement: Variables_et_fonctions/Cours introduction fonction.md
+  - title: Cours - Compléments sur les fonctions
     statement: Les_fonctions/Cours fonctions.md
   - title: Cours - Les classes en Python
     statement: Cours/Classes.md
