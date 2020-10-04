@@ -30,22 +30,24 @@ plan:
     statement: Les_listes/Complements listes.md
   - title: Manipulations de base
     statement: Les_listes/Manipulations de base.md
-  - title: Cours - Module math
-    statement: Variables_et_fonctions/Cours module math.md
-  - title: Cours - Module random
-    statement: Maths/Cours module random.md
   - title: Cours - Introduction aux fonctions
     statement: Variables_et_fonctions/Cours introduction fonction.md
   - title: Cours - Compléments sur les fonctions
     statement: Les_fonctions/Cours fonctions.md
-  - title: Cours - Les classes en Python
-    statement: Cours/Classes.md
-  - title: Cours - Représentation graphique avec matplotlib
+- title: Les modules Python
+  - title: Cours - Module math
+    statement: Variables_et_fonctions/Cours module math.md
+  - title: Cours - Module random
+    statement: Maths/Cours module random.md
+  - title: Cours - Module matplotlib
     statement: Maths/Cours module matplotlib.md
   - title: Compléments sur le module matplotlib
     statement: Maths/Complements_matplotlib.md
   - title: Cours - Régressions linéaires et d'ordres supérieurs
     statement: Maths/Regression.md
+- title: Programmation Orientée Objet
+  - title: Cours - Les classes en Python
+    statement: Cours/Classes.md
 - title: Classe de Seconde
   plan:
   - title: Introduction
