@@ -5,7 +5,7 @@ Cette page est un complément du cours sur les variables et opérations pour app
 # Première partie : Affectations de variables
 
 Nous avons déjà vu comment affecter à des variables des valeurs. Il y a plusieurs façons d'améliorer ces affectations selon la situation.
-+ Commençons par la technique la plus utile : l'incrémentation. Il va nous arriver très souvent de vouloir augmenter une variable d'une certaine valeur. Une façon de faire pour ajouter 3 à une variable x est :
++ Commençons par la technique la plus utile : l'incrémentation. Il va nous arriver très souvent de vouloir augmenter une variable d'une certaine valeur. Une façon de faire pour ajouter 3 à une variable `x` est :
   ```python
   x = x + 3
   ```
@@ -14,8 +14,9 @@ Nous avons déjà vu comment affecter à des variables des valeurs. Il y a plusi
   x += 3
   ```
   Cela peut sembler anecdotique mais quand on a beaucoup de variables avec des noms longs et peu agréables à écrire, on savoure le plaisir de n'avoir à les écrire qu'une fois grâce à cette notation.  
-  Cette notation existe pour beaucoup d'opérations classiques. On peut soustraire une valeur à une variable (avec -=), multiplier (\*=), diviser (/=), mettre à la puissance (\*\*=), effectuer la division euclidienne (//=) ou le reste (%=) ...  
-  Exemple (Vous pouvez modifier les exemples pour tester par vous même):
+  Cette notation existe pour beaucoup d'opérations classiques. On peut soustraire une valeur à une variable (avec `-=`), multiplier (`\*=`), diviser (`/=`), mettre à la puissance (`\*\*=`), effectuer la division euclidienne (`//=`) ou le reste (`%=`) ...  
+  **Exemples**.
+  Vous pouvez modifier les exemples pour tester par vous même.
   ```python runnable
   x = 3
   x += 4
@@ -29,7 +30,7 @@ Nous avons déjà vu comment affecter à des variables des valeurs. Il y a plusi
   x **= 2
   print(x)
   ```
-+ Supposons que nous voulions affecter à *a*, *b* et *c* la même valeur 3. Une façon de faire serait :
++ Supposons que nous voulions affecter à `a`, `b` et `c` la même valeur 3. Une façon de faire serait :
   ```python
   a = 3
   b = 3
@@ -39,8 +40,8 @@ Nous avons déjà vu comment affecter à des variables des valeurs. Il y a plusi
   ```python
   a = b = c = 3
   ```
-  Une remarque importante : si plus tard dans notre programme, on stocke dans *b* la valeur 4. Alors *a* et *c* resteront à la valeur 3. C'est dans la même logique que quand on écrit b=a+3 : Python calcule a+3 et stocke le résultat dans b. 
-+ Supposons maintenant que nous voulions affecter à *a*, *b* et *c* des valeurs différentes. On a vu qu'on pouvait écrire :
+  Remarque importante : si plus tard dans notre programme, on stocke dans `b` la valeur 4. Alors `a` et `c` resteront à la valeur 3. C'est dans la même logique que quand on écrit `b = a + 3` : Python calcule `a + 3` et stocke le résultat dans `b`. 
++ Supposons maintenant que nous voulions affecter à `a`, `b` et `c` des valeurs différentes. On a vu qu'on pouvait écrire :
   ```python
   a = 3
   b = 7
@@ -50,8 +51,9 @@ Nous avons déjà vu comment affecter à des variables des valeurs. Il y a plusi
   ```python
   a, b, c = 3, 7, 1
   ```
-  Python affecte à la première variable la première valeur, à la deuxième variable la deuxième valeur etc.
-+ On peut améliorer encore cette dernière technique en utilisant stockant dans des variables des calculs utilisant ces mêmes variables. Par exemple : supposons que x=1 et y=4 et qu'on veuille maintenant stocker dans x le résultat de x+y et dans y le résultat de x-y. Pour cela, on écrirait simplement : 
+  Python affecte à la première variable la première valeur, à la deuxième variable la deuxième valeur, etc.
++ On peut améliorer encore cette dernière technique en stockant dans des variables des calculs utilisant ces mêmes variables. 
+**Exemple**. Supposons que `x = 1` et `y = 4` et qu'on veuille maintenant stocker dans `x` le résultat de `x + y` et dans `y` le résultat de `x - y`. Pour cela, on écrirait simplement : 
   ```python
   x, y = 1, 4
   x, y = x + y, x - y

@@ -4,7 +4,8 @@
 
 Une variable en informatique permet de garder en mémoire (le temps que le programme s'exécute) des données comme par exemple le résultat d'un calcul ou un mot, une liste ou bien d'autres choses.  
 Pour stocker en mémoire une valeur dans une variable, on utilise simplement le signe égal `=`.  
-> L'action d'assigner une valeur à une variable se nomme **affectation**.
+> **Définition**.
+L'action d'assigner une valeur à une variable se nomme **affectation**.
 Par exemple : 
 ```python
 a = 3
@@ -12,7 +13,7 @@ b = 7
 c = b + a + 2
 ```
 Dans cet exemple, on a mis en mémoire trois variables. Dans `a`, on a stocké la valeur 3, dans `b` la valeur 7 et dans `c` la valeur 12. 
-Remarque importante : ce qui est stocké est le *résultat du calcul* et non le calcul. Ce qui veut dire que si on modifie la valeur de `a`, la variable `c` elle restera à 12.
+**Remarque importante** : ce qui est stocké est le *résultat du calcul* et non le calcul. Ce qui veut dire que si on modifie la valeur de `a`, la variable `c` gardera la valeur 12.
 
 Pour afficher la valeur d'une variable, on utilise la fonction `print`. Appuyez sur le bouton Run pour voir l'effet du code ci-dessous :
 ```python runnable
@@ -53,7 +54,7 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   - Pour les _puissances_, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.  
   - Pour la _racine carrée_, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre `x`, il suffit d'écrire `x**0.5`.  
   
-  Voici quelques exemples. 
+  **Exemples**. 
   On a ajouté des commentaires à coté des instructions d'affichage des calculs pour que ces instructions soient plus claires. Pour écrire un commentaire, il suffit de mettre un `#` (hashtag) devant. Tout ce qui suit le `#` ne sera pas executé par python et ne sert donc qu'à la personne qui lit le programme.
   ```python runnable
   print(2**3) # Affiche le résultat de 2 puissance 3
@@ -76,7 +77,7 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
   print(a % b)  # Affiche le reste de la division euclidienne de a par b
   ```
 
-  Remarque : Même si ces opérations sont finalement assez peu utilisées en cours de mathématiques, elles le sont beaucoup plus en informatique, principalement le calcul du reste de la division euclidienne (l'opérateur modulo). 
+  **Remarque**. Même si ces opérations sont finalement assez peu utilisées en cours de mathématiques, elles le sont beaucoup plus en informatique, principalement le calcul du reste de la division euclidienne (l'opérateur modulo). 
   Par exemple pour déterminer si un nombre est pair, il suffit de regarder si `x % 2` vaut 0. En effet, un nombre est pair si et seulement si son reste par la division par 2 est nul. On l'utilisera régulièrement dans les exercices.
   
 # Troisième partie : QCM
