@@ -1,317 +1,317 @@
 title: Apprendre Python dans le secondaire
 plan:
-- title: Présentation
-  plan:
   - title: Présentation
-    statement: markdowns/welcome.md
-  - title: Bac à sable
-    statement: markdowns/Bac a sable.md
-- title: Cours
-  plan:
-  - title: Cours - Variables et opérations
-    statement: Variables_et_fonctions/Cours variables et operations.md
-  - title: Compléments sur les variables et opérations
-    statement: Variables_et_fonctions/Complements.md
-  - title: Cours - Les conditions
-    statement: Les_conditions/Cours conditions.md
-  - title: Cours - Les boucles while
-    statement: Les_boucles/Cours boucles while.md
-  - title: Cours - Les boucles for
-    statement: Les_boucles/presentation_for.md
-  - title: Compléments sur les boucles
-    statement: Les_boucles/Complements boucles.md
-  - title: Cours - Les chaines de caractères
-    statement: Chaines_caracteres/Cours chaine de caracteres.md
-  - title: Compléments sur les chaines de caractères
-    statement: Chaines_caracteres/Complements chaines.md
-  - title: Cours - Les listes
-    statement: Les_listes/Cours listes.md
-  - title: Cours - Les listes (suite)
-    statement: Les_listes/Complements listes.md
-  - title: Manipulations de base
-    statement: Les_listes/Manipulations de base.md
-  - title: Cours - Introduction aux fonctions
-    statement: Variables_et_fonctions/Cours introduction fonction.md
-  - title: Cours - Compléments sur les fonctions
-    statement: Les_fonctions/Cours fonctions.md
-- title: Les modules Python
-  plan:
-  - title: Cours - Module math
-    statement: Variables_et_fonctions/Cours module math.md
-  - title: Cours - Module random
-    statement: Maths/Cours module random.md
-  - title: Cours - Module matplotlib
-    statement: Maths/Cours module matplotlib.md
-  - title: Compléments sur le module matplotlib
-    statement: Maths/Complements_matplotlib.md
-  - title: Cours - Régressions linéaires et d'ordres supérieurs
-    statement: Maths/Regression.md
-- title: Programmation Orientée Objet
-  plan:
-  - title: Cours - Les classes en Python
-    statement: Cours/Classes.md
-- title: Classe de Seconde
-  plan:
-  - title: Introduction
-    statement: Seconde/presentation.md
-  - title: Début d'année
-    statement: Seconde/Troisieme.md
+    plan:
+      - title: Présentation
+        statement: markdowns/welcome.md
+      - title: Bac à sable
+        statement: markdowns/Bac a sable.md
+  - title: Cours
+    plan:
+      - title: Cours - Variables et opérations
+        statement: Variables_et_fonctions/Cours variables et operations.md
+      - title: Compléments sur les variables et opérations
+        statement: Variables_et_fonctions/Complements.md
+      - title: Cours - Les conditions
+        statement: Les_conditions/Cours conditions.md
+      - title: Cours - Les boucles while
+        statement: Les_boucles/Cours boucles while.md
+      - title: Cours - Les boucles for
+        statement: Les_boucles/presentation_for.md
+      - title: Compléments sur les boucles
+        statement: Les_boucles/Complements boucles.md
+      - title: Cours - Les chaines de caractères
+        statement: Chaines_caracteres/Cours chaine de caracteres.md
+      - title: Compléments sur les chaines de caractères
+        statement: Chaines_caracteres/Complements chaines.md
+      - title: Cours - Les listes
+        statement: Les_listes/Cours listes.md
+      - title: Cours - Les listes (suite)
+        statement: Les_listes/Complements listes.md
+      - title: Manipulations de base
+        statement: Les_listes/Manipulations de base.md
+      - title: Cours - Introduction aux fonctions
+        statement: Variables_et_fonctions/Cours introduction fonction.md
+      - title: Cours - Compléments sur les fonctions
+        statement: Les_fonctions/Cours fonctions.md
+  - title: Les modules Python
+    plan:
+      - title: Cours - Module math
+        statement: Variables_et_fonctions/Cours module math.md
+      - title: Cours - Module random
+        statement: Maths/Cours module random.md
+      - title: Cours - Module matplotlib
+        statement: Maths/Cours module matplotlib.md
+      - title: Compléments sur le module matplotlib
+        statement: Maths/Complements_matplotlib.md
+      - title: Cours - Régressions linéaires et d'ordres supérieurs
+        statement: Maths/Regression.md
+  - title: Programmation Orientée Objet
+    plan:
+      - title: Cours - Les classes en Python
+        statement: Cours/Classes.md
+  - title: Classe de Seconde
+    plan:
+      - title: Introduction
+        statement: Seconde/presentation.md
+      - title: Début d'année
+        statement: Seconde/Troisieme.md
+      - title: Les fonctions
+        statement: Seconde/Fonction.md
+  - title: Travaux Pratiques de Seconde
+    plan:
+      - title: Introduction
+        statement: TP/intro.md
+      - title: Mini défis
+        statement: TP/Mini_defis.md
+      - title: Jeu du pendu
+        statement: TP/Pendu.md
+  - title: Classe de Première
+    plan:
+      - title: Introduction
+        statement: Premiere/presentation.md
+      - title: Second degré
+        statement: Premiere/second_degre.md
+      - title: Suites numériques
+        statement: Premiere/suites_numeriques.md
+      - title: Analyse
+        statement: Premiere/derivation.md
+      - title: Géométrie
+        statement: Premiere/geometrie.md
+      - title: Probabilité
+        statement: Premiere/probabilite.md
+  - title: Travaux Pratiques de Première
+    plan:
+      - title: Introduction
+        statement: TP/intro.md
+      - title: Suites recurrentes
+        statement: Les_fonctions/Suites_recurrentes.md
+      - title: Suite de Syracuse
+        statement: Maths/Syracuse.md
+      - title: Suite de Van Eck
+        statement: TP/VanEck.md
+      - title: Suite de Hofstadter
+        statement: TP/Hofstadter.md
+      - title: Art algorithmique
+        statement: TP/Art_algo.md
+      - title: Suite logistique et Chaos
+        statement: TP/Logistique.md
+      - title: Ensembles de Mandelbrot et Julia
+        statement: TP/Mandelbrot.md
+      - title: La recherche par dichotomie
+        statement: Maths/Dichotomie.md
+      - title: La méthode d'Euler
+        statement: Maths/Méthode Euler.md
+      - title: La méthode de Newton
+        statement: TP/Newton.md
+      - title: Méthode d'Archimède
+        statement: TP/approx_pi.md
+      - title: Fréquences d'apparitions de lettres
+        statement: TP/Frequence_lettres.md
+      - title: La méthode de Monte Carlo
+        statement: Maths/Monte Carlo.md
+      - title: Simulation de l'Euromillion
+        statement: TP/euromillion.md
+  - title: Moins de maths, plus d'info
+    plan:
+      - title: Manipulations d'images I
+        statement: Info/manipulations_images.md
+      - title: Manipulations d'images II
+        statement: Info/manipulations_images2.md
+      - title: Exercices d'entrainement sur d'autres sites
+        statement: Info/entrainement_codingame.md
+  - title: Chaines de caractères
+    plan:
+      - title: Introduction
+        statement: Chaines_caracteres/Introduction.md
+      - title: Tirages au scrabble
+        statement: Chaines_caracteres/Tirages au scrabble.md
+      - title: Palindromes et anacycliques
+        statement: Chaines_caracteres/Anacycliques.md
+      - title: Sapin de noel
+        statement: Chaines_caracteres/Sapin de noel.md
+      - title: Carte bancaire
+        statement: Chaines_caracteres/Carte bancaire.md
+      - title: Expression bien parenthesee
+        statement: Chaines_caracteres/Expression bien parenthesee.md
+      - title: Touche, touche pas
+        statement: Chaines_caracteres/Touche touche pas.md
+      - title: Suite des pliages d un papier
+        statement: Chaines_caracteres/Suite des pliages d un papier.md
+      - title: Codage de César
+        statement: Chaines_caracteres/Codage de César.md
+  - title: Les listes
+    plan:
+      - title: Introduction
+        statement: Les_listes/Introduction.md
+      - title: Exercices de Seconde
+        statement: Les_listes/seconde.md
+      - title: Indices du plus petit élément dans une liste
+        statement: Les_listes/Plus petits elements.md
+      - title: Retirer les doublons
+        statement: Les_listes/Retirer les doublons.md
+      - title: Tracer la courbes représentative d'une fonction
+        statement: Les_listes/Tracer une fonction.md
+      - title: Triangle de Pascal
+        statement: Les_listes/Triangle de Pascal.md
+      - title: Discrimination de nombres
+        statement: Les_listes/Discrimination de nombres.md
+      - title: Liste de nombres premiers
+        statement: Les_listes/Liste de nombres premiers.md
+      - title: Tout en une ligne !
+        statement: Les_listes/Tout_en_une_ligne.md
+      - title: Méthodes de tri
+        statement: Les_listes/Tris.md
   - title: Les fonctions
-    statement: Seconde/Fonction.md
-- title: Travaux Pratiques de Seconde
-  plan:
-  - title: Introduction
-    statement: TP/intro.md
-  - title: Mini défis
-    statement: TP/Mini_defis.md
-  - title: Jeu du pendu
-    statement: TP/Pendu.md
-- title: Classe de Première
-  plan:
-  - title: Introduction
-    statement: Premiere/presentation.md
-  - title: Second degré
-    statement: Premiere/second_degre.md
-  - title: Suites numériques
-    statement: Premiere/suites_numeriques.md
-  - title: Analyse
-    statement: Premiere/derivation.md
-  - title: Géométrie
-    statement: Premiere/geometrie.md
-  - title: Probabilité
-    statement: Premiere/probabilite.md
-- title: Travaux Pratiques de Première
-  plan:
-  - title: Introduction
-    statement: TP/intro.md
-  - title: Suites recurrentes
-    statement: Les_fonctions/Suites_recurrentes.md
-  - title: Suite de Syracuse
-    statement: Maths/Syracuse.md
-  - title: Suite de Van Eck
-    statement: TP/VanEck.md
-  - title: Suite de Hofstadter
-    statement: TP/Hofstadter.md
-  - title: Art algorithmique
-    statement: TP/Art_algo.md
-  - title: Suite logistique et Chaos
-    statement: TP/Logistique.md
-  - title: Ensembles de Mandelbrot et Julia
-    statement: TP/Mandelbrot.md
-  - title: La recherche par dichotomie
-    statement: Maths/Dichotomie.md
-  - title: La méthode d'Euler
-    statement: Maths/Méthode Euler.md
-  - title: La méthode de Newton
-    statement: TP/Newton.md
-  - title: Méthode d'Archimède
-    statement: TP/approx_pi.md
-  - title: Fréquences d'apparitions de lettres
-    statement: TP/Frequence_lettres.md
-  - title: La méthode de Monte Carlo
-    statement: Maths/Monte Carlo.md
-  - title: Simulation de l'Euromillion
-    statement: TP/euromillion.md
-- title: Moins de maths, plus d'info
-  plan:
-  - title: Manipulations d'images I
-    statement: Info/manipulations_images.md
-  - title: Manipulations d'images II
-    statement: Info/manipulations_images2.md
-  - title: Exercices d'entrainement sur d'autres sites
-    statement: Info/entrainement_codingame.md
-- title: Chaines de caractères
-  plan:
-  - title: Introduction
-    statement: Chaines_caracteres/Introduction.md
-  - title: Tirages au scrabble
-    statement: Chaines_caracteres/Tirages au scrabble.md
-  - title: Palindromes et anacycliques
-    statement: Chaines_caracteres/Anacycliques.md
-  - title: Sapin de noel
-    statement: Chaines_caracteres/Sapin de noel.md
-  - title: Carte bancaire
-    statement: Chaines_caracteres/Carte bancaire.md
-  - title: Expression bien parenthesee
-    statement: Chaines_caracteres/Expression bien parenthesee.md
-  - title: Touche, touche pas
-    statement: Chaines_caracteres/Touche touche pas.md
-  - title: Suite des pliages d un papier
-    statement: Chaines_caracteres/Suite des pliages d un papier.md
-  - title: Codage de César
-    statement: Chaines_caracteres/Codage de César.md
-- title: Les listes
-  plan:
-  - title: Introduction
-    statement: Les_listes/Introduction.md
-  - title: Exercices de Seconde
-    statement: Les_listes/seconde.md
-  - title: Indices du plus petit élément dans une liste
-    statement: Les_listes/Plus petits elements.md
-  - title: Retirer les doublons
-    statement: Les_listes/Retirer les doublons.md
-  - title: Tracer la courbes représentative d'une fonction
-    statement: Les_listes/Tracer une fonction.md
-  - title: Triangle de Pascal
-    statement: Les_listes/Triangle de Pascal.md
-  - title: Discrimination de nombres
-    statement: Les_listes/Discrimination de nombres.md
-  - title: Liste de nombres premiers
-    statement: Les_listes/Liste de nombres premiers.md
-  - title: Tout en une ligne !
-    statement: Les_listes/Tout_en_une_ligne.md
-  - title: Méthodes de tri
-    statement: Les_listes/Tris.md
-- title: Les fonctions
-  plan:
-  - title: Introduction
-    statement: Les_fonctions/Introduction.md
-  - title: Exercices de base
-    statement: Les_fonctions/Exercices de base.md
-  - title: Factorielle
-    statement: Les_fonctions/factorielle.md
-  - title: Palindromes
-    statement: Les_fonctions/palindromes.md
-  - title: Anagrammes
-    statement: Les_fonctions/Anagrammes.md
-  - title: Plouf plouf !
-    statement: Les_fonctions/plouf_plouf.md
-  - title: Tours de Hanoï
-    statement: Les_fonctions/Tours de hanoi.md
-  - title: Systeme proie-prédateur
-    statement: Les_fonctions/Systeme proie-prédateur.md
-- title: Exercices de synthèse
-  plan:
-  - title: Introduction
-    statement: Vrac/Introduction.md
-  - title: Autour de Kaprekar
-    statement: Vrac/Kaprekar.md
-  - title: Tri stupide
-    statement: Vrac/tri_stupide.md
-  - title: La paradoxe de Monty Hall
-    statement: Vrac/Monty Hall.md
-  - title: La courbe du dragon
-    statement: Vrac/Courbe du dragon.md
-- title: Mathématiques et programmation
-  plan:
-  - title: Introduction
-    statement: Maths/Introduction.md
-  - title: Données statistiques
-    statement: Maths/Statistiques.md
-  - title: L'algorithme d'Euclide
-    statement: Maths/Euclide.md
-  - title: La méthode des rectangles
-    statement: Maths/methode_rectangles.md
-  - title: La méthode des trapèzes
-    statement: Maths/Methode_trapèzes.md
-- title: Physique et programmation
-  plan:
-  - title: Introduction
-    statement: Physique/intro.md
-  - title: Quelques programmes en physique-chimie
-    statement: Physique/programmes_en_vrac.md
-  - title: Chronophotographie
-    statement: Physique/Chronophotographie.md
-  - title: Résolution numérique d'équations differentielles
-    statement: Physique/Resolution equa diff.md
-- title: Défis
-  plan:
-  - title: Introduction
-    statement: Defis/Introduction.md
-  - title: Projet Euler n°1 à 5
-    statement: Defis/Euler_1.md
-  - title: Projet Euler n°6 à 10
-    statement: Defis/Euler_6.md
-  - title: Projet Euler n°11 à 15
-    statement: Defis/Euler_11.md
-  - title: Projet Euler n°16 à 20
-    statement: Defis/Euler_16.md
-  - title: Projet Euler n°21 à 25
-    statement: Defis/Euler_21.md
-  - title: Projet Euler n°26 à 30
-    statement: Defis/Euler_26.md
-  - title: Projet Euler n°31 à 35
-    statement: Defis/Euler_31.md
-  - title: Projet Euler n°36 à 40
-    statement: Defis/Euler_36.md
-  - title: Projet Euler n°41 à 45
-    statement: Defis/Euler_41.md
-  - title: Projet Euler n°46 à 50
-    statement: Defis/Euler_46.md
-  - title: Projet Euler n°51 à 55
-    statement: Defis/Euler_51.md
-  - title: Projet Euler n°56 à 60
-    statement: Defis/Euler_56.md
-  - title: Projet Euler n°61 à 65
-    statement: Defis/Euler_61.md
-  - title: Projet Euler n°66 à 70
-    statement: Defis/Euler_66.md
-  - title: Projet Euler n°71 à 75
-    statement: Defis/Euler_71.md
-  - title: Projet Euler n°76 à 80
-    statement: Defis/Euler_76.md
-  - title: Projet Euler n°81 à 85
-    statement: Defis/Euler_81.md
-  - title: Projet Euler n°86 à 90
-    statement: Defis/Euler_86.md
-  - title: Projet Euler n°91 à 95
-    statement: Defis/Euler_91.md
-  - title: Projet Euler n°96 à 100
-    statement: Defis/Euler_96.md
-  - title: Projet Euler n°101 à 105
-    statement: Defis/Euler_101.md
-  - title: Projet Euler n°106 à 110
-    statement: Defis/Euler_106.md
-  - title: Projet Euler n°111 à 115
-    statement: Defis/Euler_111.md
-  - title: Projet Euler n°116 à 120
-    statement: Defis/Euler_116.md
-  - title: Projet Euler n°121 à 125
-    statement: Defis/Euler_121.md
-  - title: Projet Euler n°331 à 335
-    statement: Defis/Euler_331.md
-- title: Approfondissements
-  plan:
-  - title: Introduction
-    statement: Optimisation/Introduction.md
-  - title: Mémoïzation - présentation
-    statement: Optimisation/presentation_memoization.md
-  - title: Mémoïzation - Système proies-prédateurs
-    statement: Optimisation/Volterra.md
-  - title: Mémoïzation - Approximation de e
-    statement: Optimisation/Approximation_de_e.md
-  - title: Vectorisation - Aire de l'ensemble de Mandelbrot
-    statement: Optimisation/Vectorization.md
-  - title: Exercices d'approfondissement sur d'autres sites
-    statement: Optimisation/Exercices.md
-- title: Projets
-  plan:
-  - title: Combats d'IA
-    statement: Projets/IA_codingame.md
-  - title: Exemple avec Code à la mode
-    statement: Projets/Code_a_la_mode.md
-  - title: IA et jeux sur mobiles
-    statement: Projets/IA_de_jeux.md
-  - title: Exemple avec le jeu Boggle
-    statement: Projets/Boggle.md
-  - title: Exemple avec le jeu 2048
-    statement: Projets/2048.md
-  - title: Exemple du Sudoku
-    statement: Projets/Sudoku.md
-- title: Forum des Mathématiques
-  plan:
-  - title: Jeu de nim - Fibonacci
-    statement: Autre/nim_fibonacci.md
-  - title: Jeu de nim - Marienbad
-    statement: Autre/nim_marienbad.md
-  - title: Epicycloides et Transformée de Fourier
-    statement: Autre/Epicycloides.md
-  - title: Jeu de Light Out
-    statement: Autre/Lightout.md
+    plan:
+      - title: Introduction
+        statement: Les_fonctions/Introduction.md
+      - title: Exercices de base
+        statement: Les_fonctions/Exercices de base.md
+      - title: Factorielle
+        statement: Les_fonctions/factorielle.md
+      - title: Palindromes
+        statement: Les_fonctions/palindromes.md
+      - title: Anagrammes
+        statement: Les_fonctions/Anagrammes.md
+      - title: Plouf plouf !
+        statement: Les_fonctions/plouf_plouf.md
+      - title: Tours de Hanoï
+        statement: Les_fonctions/Tours de hanoi.md
+      - title: Systeme proie-prédateur
+        statement: Les_fonctions/Systeme proie-prédateur.md
+  - title: Exercices de synthèse
+    plan:
+      - title: Introduction
+        statement: Vrac/Introduction.md
+      - title: Autour de Kaprekar
+        statement: Vrac/Kaprekar.md
+      - title: Tri stupide
+        statement: Vrac/tri_stupide.md
+      - title: La paradoxe de Monty Hall
+        statement: Vrac/Monty Hall.md
+      - title: La courbe du dragon
+        statement: Vrac/Courbe du dragon.md
+  - title: Mathématiques et programmation
+    plan:
+      - title: Introduction
+        statement: Maths/Introduction.md
+      - title: Données statistiques
+        statement: Maths/Statistiques.md
+      - title: L'algorithme d'Euclide
+        statement: Maths/Euclide.md
+      - title: La méthode des rectangles
+        statement: Maths/methode_rectangles.md
+      - title: La méthode des trapèzes
+        statement: Maths/Methode_trapèzes.md
+  - title: Physique et programmation
+    plan:
+      - title: Introduction
+        statement: Physique/intro.md
+      - title: Quelques programmes en physique-chimie
+        statement: Physique/programmes_en_vrac.md
+      - title: Chronophotographie
+        statement: Physique/Chronophotographie.md
+      - title: Résolution numérique d'équations differentielles
+        statement: Physique/Resolution equa diff.md
+  - title: Défis
+    plan:
+      - title: Introduction
+        statement: Defis/Introduction.md
+      - title: Projet Euler n°1 à 5
+        statement: Defis/Euler_1.md
+      - title: Projet Euler n°6 à 10
+        statement: Defis/Euler_6.md
+      - title: Projet Euler n°11 à 15
+        statement: Defis/Euler_11.md
+      - title: Projet Euler n°16 à 20
+        statement: Defis/Euler_16.md
+      - title: Projet Euler n°21 à 25
+        statement: Defis/Euler_21.md
+      - title: Projet Euler n°26 à 30
+        statement: Defis/Euler_26.md
+      - title: Projet Euler n°31 à 35
+        statement: Defis/Euler_31.md
+      - title: Projet Euler n°36 à 40
+        statement: Defis/Euler_36.md
+      - title: Projet Euler n°41 à 45
+        statement: Defis/Euler_41.md
+      - title: Projet Euler n°46 à 50
+        statement: Defis/Euler_46.md
+      - title: Projet Euler n°51 à 55
+        statement: Defis/Euler_51.md
+      - title: Projet Euler n°56 à 60
+        statement: Defis/Euler_56.md
+      - title: Projet Euler n°61 à 65
+        statement: Defis/Euler_61.md
+      - title: Projet Euler n°66 à 70
+        statement: Defis/Euler_66.md
+      - title: Projet Euler n°71 à 75
+        statement: Defis/Euler_71.md
+      - title: Projet Euler n°76 à 80
+        statement: Defis/Euler_76.md
+      - title: Projet Euler n°81 à 85
+        statement: Defis/Euler_81.md
+      - title: Projet Euler n°86 à 90
+        statement: Defis/Euler_86.md
+      - title: Projet Euler n°91 à 95
+        statement: Defis/Euler_91.md
+      - title: Projet Euler n°96 à 100
+        statement: Defis/Euler_96.md
+      - title: Projet Euler n°101 à 105
+        statement: Defis/Euler_101.md
+      - title: Projet Euler n°106 à 110
+        statement: Defis/Euler_106.md
+      - title: Projet Euler n°111 à 115
+        statement: Defis/Euler_111.md
+      - title: Projet Euler n°116 à 120
+        statement: Defis/Euler_116.md
+      - title: Projet Euler n°121 à 125
+        statement: Defis/Euler_121.md
+      - title: Projet Euler n°331 à 335
+        statement: Defis/Euler_331.md
+  - title: Approfondissements
+    plan:
+      - title: Introduction
+        statement: Optimisation/Introduction.md
+      - title: Mémoïzation - présentation
+        statement: Optimisation/presentation_memoization.md
+      - title: Mémoïzation - Système proies-prédateurs
+        statement: Optimisation/Volterra.md
+      - title: Mémoïzation - Approximation de e
+        statement: Optimisation/Approximation_de_e.md
+      - title: Vectorisation - Aire de l'ensemble de Mandelbrot
+        statement: Optimisation/Vectorization.md
+      - title: Exercices d'approfondissement sur d'autres sites
+        statement: Optimisation/Exercices.md
+  - title: Projets
+    plan:
+      - title: Combats d'IA
+        statement: Projets/IA_codingame.md
+      - title: Exemple avec Code à la mode
+        statement: Projets/Code_a_la_mode.md
+      - title: IA et jeux sur mobiles
+        statement: Projets/IA_de_jeux.md
+      - title: Exemple avec le jeu Boggle
+        statement: Projets/Boggle.md
+      - title: Exemple avec le jeu 2048
+        statement: Projets/2048.md
+      - title: Exemple du Sudoku
+        statement: Projets/Sudoku.md
+  - title: Forum des Mathématiques
+    plan:
+      - title: Jeu de nim - Fibonacci
+        statement: Autre/nim_fibonacci.md
+      - title: Jeu de nim - Marienbad
+        statement: Autre/nim_marienbad.md
+      - title: Epicycloides et Transformée de Fourier
+        statement: Autre/Epicycloides.md
+      - title: Jeu de Light Out
+        statement: Autre/Lightout.md
 projects:
   python:
     buildCommand: pip install numpy matplotlib Pillow; pip install scipy numba
     root: /python-project
     runner:
       name: python
-      version: '3.6'
+      version: "3.8"
