@@ -69,12 +69,12 @@ Nous avons déjà vu comment affecter à des variables des valeurs. Il y a plusi
   ```python runnable
   x, y = 1, 4
   x, y = x + y, x - y
-  print(f"Résultat dans le premier cas : {x=} et {y=}")
+  print(f"Résultat dans le premier cas : {x =} et {y =}")
   x = 1
   y = 4
   x = x + y
   y = x - y
-  print(f"Résultat dans le second cas : x = {x} et y = {y}")
+  print(f"Résultat dans le second cas : {x =} et {y =}")
   ```
   Explications : Dans le premier cas, Python calcule x+y et x-y puis stocke en mémoire. Dans le second cas, on calcule d'abord x+y et on stocke dans x ce qui veut dire que x vaut maintenant 5 puis calcule x-y (avec x=5 donc) puis stocke dans y. Le résultat n'est donc pas le même.  
   Cette technique est très pratique par exemple pour intervertir les valeurs de certaines variables. Il suffit d'écrire `x, y = y, x`.
