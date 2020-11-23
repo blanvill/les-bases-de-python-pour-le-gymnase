@@ -4,14 +4,15 @@
 
 Une variable en informatique permet de garder en mémoire (le temps que le programme s'exécute) des données comme par exemple le résultat d'un calcul ou un mot, une liste ou bien d'autres choses.  
 Pour stocker en mémoire une valeur dans une variable, on utilise simplement le signe égal `=`.  
+> L'action d'assigner une valeur à une variable se nomme **affectation**.
 Par exemple : 
 ```python
 a = 3
 b = 7
 c = b + a + 2
 ```
-Dans cet exemple, on a mis en mémoire 3 variables. Dans `a`, on a stocké la valeur 3, dans `b` la valeur 7 et dans `c` la valeur 12. 
-Remarque importante : ce qui est stocké est le résultat du calcul et non le calcul. Ce qui veut dire que si on modifie la valeur de `a`, la variable `c` elle restera à 12.
+Dans cet exemple, on a mis en mémoire trois variables. Dans `a`, on a stocké la valeur 3, dans `b` la valeur 7 et dans `c` la valeur 12. 
+Remarque importante : ce qui est stocké est le *résultat du calcul* et non le calcul. Ce qui veut dire que si on modifie la valeur de `a`, la variable `c` elle restera à 12.
 
 Pour afficher la valeur d'une variable, on utilise la fonction `print`. Appuyez sur le bouton Run pour voir l'effet du code ci-dessous :
 ```python runnable
@@ -31,7 +32,7 @@ print(a)
 a = a + a
 print(a)
 ```
-Petite explication des résultats affichés : Au début `a` vaut 3, on lui ajoute 2 et on stocke dans `a` donc maintenant `a` vaut 5, ce qu'on affiche en premier. Ensuite on calcule `a+a` donc 5+5=10 qu'on stocke de nouveau dans `a`, d'où l'affichage du 10 en deuxième.
+Petite explication des résultats affichés : Au début `a` vaut 3. Ensuite, on lui ajoute 2 et on stocke le résultat dans `a`. Donc maintenant `a` vaut 5, ce qu'on affiche en premier. Enfin on calcule `a+a` donc 5+5=10 qu'on stocke de nouveau dans `a`, d'où l'affichage du 10 en deuxième.
 
 
 # Deuxième partie : Les opérations sur les variables numériques
