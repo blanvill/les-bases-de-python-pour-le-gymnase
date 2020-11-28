@@ -71,7 +71,8 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   ce qui nous permet de récupérer les chiffres un à un sous forme de chaine de caractères. 
   Si on veut les retransformer en nombre pour pouvoir faire des calculs, par exemple, on pourra utiliser `int(str_5e_chiffre)`.
   
-+ `chaine * k` : Crée une chaine de caractères dans laquelle on répète la chaîne de caractères `chaine` `k` fois.
++ `chaine * k` : Crée une chaine de caractères dans laquelle on répète la chaîne 
+  de caractères `chaine` `k` fois.
   **Attention**. La variable `k` doit être de type entier !
   ```python runnable
   chaine = "Monsieur, j'ai pas compris ! "
