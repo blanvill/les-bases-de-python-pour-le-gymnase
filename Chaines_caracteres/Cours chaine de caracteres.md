@@ -103,7 +103,7 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   else :
     print(f"La lettre {lettre} n'est pas une voyelle.")
   ```
-  Ce code permettrait par exemple de vérifier si la variable {lettre} est une voyelle ou pas.
+  Ce code permettrait par exemple de vérifier si la variable `lettre` est une voyelle ou pas.
   
 + Comparaisons entre chaines de caractères : On peut comparer, comme pour les nombres, 
   des chaines de caractères.
@@ -125,8 +125,52 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   
   Ça fonctionne aussi pour les nombres dans une chaîne de caractères : `"1234" < "2"`. En effet, on les compare comme des chaines de caractères et non comme des nombres. On regarde le premier caractère : `"1" < "2"` donc `"1234" < "2"`.
 
-  Pour être plus précis, pour comparer deux caractères, on compare en fait leur code ASCII. 
+  Pour être plus précis, pour comparer deux caractères, on compare en fait leur code Unicode. 
   Donc on a `"1" < "A" < "_" < "a"` par exemple.
+
+
+# Codage Unicode
+
+Grâce au codage Unicode chaque caractère existant dispose d'une code Unicode unique.
+
+Par exemple, 
++ la lettre "A" dispose du code Unicode (ou ASCII) 65.
++ la lettre "é" dispose du code Unicode 233.
++ le caractère "€" dispose du code Unicode 8364.
+
+Il existe des fonctions en Python qui permettent de passer des caractères à leur code Unicode :
++ `ord(caractere)` : Donne le code UNicode du caractère.
+  ```python runnable
+  print(ord("A"))
+  print(ord("é"))
+  print(ord("€"))
+  ```
+
++ `chr(code)` : Donne le caractère correspondant au code Unicode.
+  ```python runnable
+  print(chr(65))
+  print(chr(233))
+  print(chr(8364))
+  ```
+  
+Exemple d'utilisation : Je veux transformer un caractère en son suivant.
+```python runnable
+caractere = "e"
+code_unicode = ord(caractere)
+caractere_suivant = chr(code_unicode + 1)
+print(caractere_suivant)
+```
+
+Expliquons un peu : 
+1. On place le caractère "e" dans la variable `caractere`. 
+2. On récupère son code unicode dans la variable `code_unicode`. 
+3. On récupère le caractère suivant, celui dont le code est `code_unicode + 1`. 
+   Et on l'enregistre dans la variable `caractere_suivant`.
+4. On affiche le caractère suivant `caractere_suivant`.
+
+Cet exemple utilise beaucoup de variables. 
+On pourrait écrire directement `print(chr(ord(caractere) + 1))` mais c'est moins clair... 
+Petite question pour terminer : Qu'obtiendrait-on si `caractere = "z"` ?
 
 # QCM
 
