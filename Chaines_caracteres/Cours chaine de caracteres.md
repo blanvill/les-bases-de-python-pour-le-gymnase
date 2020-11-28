@@ -24,7 +24,7 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   ```python runnable
   chaine = "une chaîne de caractères"
   longueur = len(chaine)
-  print(f"La chaîne '{chaine}' est composée de {mongueur} caractères.")
+  print(f"La chaîne '{chaine}' est composée de {longueur} caractères.")
   print(len("anticonstitutionnellement"))
   ```
 
