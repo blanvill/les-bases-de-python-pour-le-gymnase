@@ -20,39 +20,42 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
 
 # Les actions de base
 
-+ `len(texte)` : Donne la longueur de la chaîne de caractères `texte`.
++ `len(chaine)` : Donne la longueur de la chaîne de caractères `texte`.
   ```python runnable
-  print(len("une chaîne de caractères"))
+  chaine = "une chaîne de caractères"
+  longueur = len(chaine)
+  print(f"La chaîne '{chaine}' est composée de {mongueur} caractères.")
+  print(len("anticonstitutionnellement"))
   ```
 
-+ `texte[n]` : Affiche le n-ième terme de la chaîne de caractères `texte`. 
++ `chaine[n]` : Affiche le n-ième terme de la chaîne de caractères `chaine`. 
   **Attention**. La première lettre commence à l'indice 0 !  
-  **Astuce**. Si on veut commencer par la fin : `texte[-1]` est la dernière lettre, `texte[-2]` l'avant dernière, etc.
+  **Astuce**. Si on veut commencer par la fin : `chaine[-1]` est la dernière lettre, `chaine[-2]` l'avant dernière, etc.
   ```python runnable
   print("Alea jacta est"[0])
   print("Alea jacta est"[5])
   print("Alea jacta est"[-1])
   ```
   
-+ `texte[debut:fin]` : Affiche une partie de la chaîne de caractères. 
++ `chaine[debut:fin]` : Affiche une partie de la chaîne de caractères. 
   La sous-chaîne de caractères commence à l'indice `debut` 
   et se termine à l'indice `fin-1`.  
-  **Attention**. La première lettre de la chaîne `texte` correspond toujours à l'indice 0 et on ne prend pas la lettre d'indice `fin`.  
-  **Astuce**. Si on veut commencer au début de la chaîne `texte`, on peut omettre l'indice de début : `texte[:fin]`. 
-  De même, si on veut aller jusqu'à la fin de la chaîne `texte`, on peut omettre l'indice de fin : `texte[debut:]`.
+  **Attention**. La première lettre de la chaîne `chaine` correspond toujours à l'indice 0 et on ne prend pas la lettre d'indice `fin`.  
+  **Astuce**. Si on veut commencer au début de la chaîne `chaine`, on peut omettre l'indice de début : `chaine[:fin]`. 
+  De même, si on veut aller jusqu'à la fin de la chaîne `chaine`, on peut omettre l'indice de fin : `chaine[debut:]`.
   ```python runnable
   print("Alea jacta est"[5:10])
   print("Alea jacta est"[:4])
   print("Alea jacta est"[5:])
   ```
   
-+ `texte1 + texte2` : Concatène les deux chaînes de caractères, c'est-à-dire les met bout à bout dans l'ordre d'apparition.
++ `chaine1 + chaine2` : Concatène les deux chaînes de caractères, c'est-à-dire les met bout à bout dans l'ordre d'apparition.
   ```python runnable
-  texte = "Vive "
+  chaine = "Vive "
   suite = "les Mathématiques"
-  print(texte + suite)
+  print(chaine + suite)
   ```
-  On peut, bien sûr, enchainer les concaténations : `texte1 + texte2 + texte3 + ...`
+  On peut, bien sûr, enchainer les concaténations : `chaine1 + chaine2 + chaine3 + ...`
   
 + `str(objet)` : Transforme (quand c'est possible) l'`objet` en chaîne de caractères. 
   Utile pour récupérer, par exemple, tous les chiffres d'un nombre séparément.
@@ -66,24 +69,24 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   ce qui nous permet de récupérer les chiffres un à un sous forme de chaine de caractères. 
   Si on veut les retransformer en nombre pour pouvoir faire des calculs, par exemple, on pourra utiliser `int(str_5e_chiffre)`.
   
-+ `texte * k` : Crée une chaine de caractères dans laquelle on répète la chaîne de caractères `texte` `k` fois.
++ `chaine * k` : Crée une chaine de caractères dans laquelle on répète la chaîne de caractères `chaine` `k` fois.
   **Attention**. La variable `k` doit être de type entier !
   ```python runnable
-  texte = "Monsieur, j'ai pas compris ! "
-  print(texte * 5)
+  chaine = "Monsieur, j'ai pas compris ! "
+  print(chaine * 5)
   ```
   
-+ `sous_texte in texte` : Renvoie la valeur `True` si la chaine de caractère `sous_texte` est dans `texte` et `False` sinon.
++ `sous_chaine in chaine` : Renvoie la valeur `True` si la chaine de caractère `sous_chaine` est dans `chaine` et `False` sinon.
   À utiliser, par exemple, comme condition avec une structure alternative `if`.
   ```python runnable
-  texte = "C'est un trou de verdure où chante une rivière."
-  print("chante" in texte)
-  print("dur" in texte)
-  print("eau" in texte)
-  print("vers" in texte)
-  print("chanter" in texte)
+  chaine = "C'est un trou de verdure où chante une rivière."
+  print("chante" in chaine)
+  print("dur" in chaine)
+  print("eau" in chaine)
+  print("vers" in chaine)
+  print("chanter" in chaine)
   ```
-  On vérifie si les chaînes de caractères `"chante"`, `"dur"`, `"eau"`, `"vers"` et `"chanter"` sont dans la chaine de caractères stockée dans `texte`.
+  On vérifie si les chaînes de caractères `"chante"`, `"dur"`, `"eau"`, `"vers"` et `"chanter"` sont dans la chaine de caractères stockée dans `chaine`.
   
   Voici un exemple d'utilisation dans une structure conditionnelle : 
   ```python
@@ -98,12 +101,12 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   Le résultat de la comparaison est une booléen : `True` ou `False`.
   Il peut donc s'utiliser comme condition avec une structure alternative `if` ou répétitive `while` .
   Voici les différentes comparaisons possibles :
-  - `texte1 == texte2` : Renvoie `True` si la valeur des deux chaînes sont parfaitement identiques, `False` sinon.
-  - `texte1 != texte2` : Renvoie `True` si la valeur des deux chaînes ont au moins un caractère différent, `False` sinon.
-  - `texte1 < texte2` : Renvoie `True` si la valeur de la chaîne `texte1` précède la valeur de la chaîne `texte2` dans l'ordre lexicographique (l'ordre du dictionnaire).
-  - `texte1 <= texte2` : Comme `<` mais la valeur des deux chaînes peuvent être les mêmes.
-  - `texte1 > texte2` : Renvoie `True` si la valeur de la chaîne `texte1` suit la valeur de la chaîne `texte2` dans l'ordre lexicographique (l'ordre du dictionnaire).
-  - `texte1 >= texte2` : Comme `<` mais la valeur des deux chaînes peuvent être les mêmes.
+  - `chaine1 == chaine2` : Renvoie `True` si la valeur des deux chaînes sont parfaitement identiques, `False` sinon.
+  - `chaine1 != chaine2` : Renvoie `True` si la valeur des deux chaînes ont au moins un caractère différent, `False` sinon.
+  - `chaine1 < chaine2` : Renvoie `True` si la valeur de la chaîne `chaine1` précède la valeur de la chaîne `chaine2` dans l'ordre lexicographique (l'ordre du dictionnaire).
+  - `chaine1 <= chaine2` : Comme `<` mais la valeur des deux chaînes peuvent être les mêmes.
+  - `chaine1 > chaine2` : Renvoie `True` si la valeur de la chaîne `chaine1` suit la valeur de la chaîne `chaine2` dans l'ordre lexicographique (l'ordre du dictionnaire).
+  - `chaine1 >= chaine2` : Comme `<` mais la valeur des deux chaînes peuvent être les mêmes.
 
   Pour ranger dans l'ordre lexicographique, on compare les deux premiers caractères de chaque texte. S'ils sont égaux, on compare le deuxième, etc.
   Par exemple : `"azerty" < "azfa"` car les premiers termes de chaque chaîne sont égaux. De même pour le deuxième. Pour le troisième, comme `"e" < "f"`, 
@@ -120,8 +123,8 @@ Voici quelques QCM pour voir si vous avez bien compris. N'hésitez pas à relire
 
 ###### QCM 1
 ```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte[5])
+chaine = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(chaine[5])
 ```  
 ?[Que va afficher ce programme ? ]
 -[x] "a" 
@@ -133,8 +136,8 @@ print(texte[5])
 
 ###### QCM 2
 ```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte[:5])
+chaine = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(chaine[:5])
 ```  
 ?[Que va afficher ce programme ? ]
 -[ ] "Un cha" 
@@ -146,8 +149,8 @@ print(texte[:5])
 
 ###### QCM 3
 ```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte[5:10])
+chaine = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(chaine[5:10])
 ```  
 ?[Que va afficher ce programme ? ]
 -[x] "asseu" 
@@ -159,8 +162,8 @@ print(texte[5:10])
 
 ###### QCM 4
 ```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte[-2])
+chaine = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(chaine[-2])
 ```  
 ?[Que va afficher ce programme ? ]
 -[ ] "i" 
@@ -172,8 +175,8 @@ print(texte[-2])
 
 ###### QCM 5
 ```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte[:2] + texte[6:8])
+chaine = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(chaine[:2] + chaine[6:8])
 ```  
 ?[Que va afficher ce programme ? ]
 -[ ] "Un sse" 
@@ -185,25 +188,25 @@ print(texte[:2] + texte[6:8])
 
 ###### QCM 6
 ```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+chaine = "Un chasseur sachant chasser doit savoir chasser sans son chien."
 print(...)
 ```  
 ?[Que faut-il mettre à la place des ... pour afficher "sachant"? ]
--[ ] texte[12:18] 
--[ ] texte[11:18]
--[x] texte[12:19]
--[ ] texte[12]+texte[18]
+-[ ] chaine[12:18] 
+-[ ] chaine[11:18]
+-[x] chaine[12:19]
+-[ ] chaine[12] + chaine[18]
 
 ---
 
 ###### QCM 7
 ```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print("ch" in texte)
-print("chant" in texte)
-print("Un chien" in texte)
-print("r s" in texte)
-print("un" in texte)
+chaine = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print("ch" in chaine)
+print("chant" in chaine)
+print("Un chien" in chaine)
+print("r s" in chaine)
+print("un" in chaine)
 ```  
 ?[Cochez les cases correspondant au numéro des lignes qui vont afficher True ]
 -[x] 2
