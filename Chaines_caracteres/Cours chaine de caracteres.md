@@ -131,15 +131,17 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
 
 # Codage Unicode
 
-Grâce au codage Unicode chaque caractère existant dispose d'une code Unicode unique.
+Grâce au codage Unicode, chaque caractère dispose d'une code Unicode unique.
 
 Par exemple, 
 + la lettre "A" dispose du code Unicode (ou ASCII) 65.
 + la lettre "é" dispose du code Unicode 233.
 + le caractère "€" dispose du code Unicode 8364.
 
-Il existe des fonctions en Python qui permettent de passer des caractères à leur code Unicode :
-+ `ord(caractere)` : Donne le code UNicode du caractère.
+**Remarque**. Les codes unicodes utilisés par Python sont des nombres entiers exprimés en base décimale. Habituellement, les codes Unicode sont représentés en hexadécimal.
+
+Il existe des fonctions en Python qui permettent de passer des caractères à leur code Unicode et vice-versa :
++ `ord(caractere)` : Donne le code Unicode du caractère.
   ```python runnable
   print(ord("A"))
   print(ord("é"))
@@ -148,9 +150,9 @@ Il existe des fonctions en Python qui permettent de passer des caractères à le
 
 + `chr(code)` : Donne le caractère correspondant au code Unicode.
   ```python runnable
-  print(chr(65))
-  print(chr(233))
-  print(chr(8364))
+  print(chr(66))
+  print(chr(234))
+  print(chr(8365))
   ```
   
 Exemple d'utilisation : Je veux transformer un caractère en son suivant.
@@ -169,7 +171,7 @@ Expliquons un peu :
 4. On affiche le caractère suivant `caractere_suivant`.
 
 Cet exemple utilise beaucoup de variables. 
-On pourrait écrire directement `print(chr(ord(caractere) + 1))` mais c'est moins clair... 
+On pourrait écrire directement `print(chr(ord(caractere) + 1))` mais c'est moins clair.
 Petite question pour terminer : Qu'obtiendrait-on si `caractere = "z"` ?
 
 # QCM
