@@ -12,7 +12,7 @@ En passant par le module `string` (qui signifie *suite* ou *chaîne*), nous pouv
 + hexdigits : contient tous les chiffres de la base hexadécimale, de 0 à F. Les lettres sont présentes en minuscule et en majuscule.
 + whitespace : contient tous les caractères considérés comme des espaces. Sont inclus les caractères espace, tabulations, saut de ligne, retour du chariot, saut de page, et tabulation verticale.
 
-[https://docs.python.org/fr/3.8/library/string.html?highlight=string#module-string]Lien vers la documentation du module string de Python (version 3.8).
+Pour plus de précisions sur le [module `string`](https://docs.python.org/fr/3.8/library/string.html?highlight=string#module-string), rendez-vous dans la doc python, version 3.8.
 
 # Fonctions spécifiques aux chaines de caractères
 
