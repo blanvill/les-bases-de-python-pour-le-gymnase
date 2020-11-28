@@ -2,139 +2,117 @@
 
 # Présentation des chaines de caractères
 
-Avec les nombres et les listes, les chaines de caractères sont les éléments informatiques qu'on utilise le plus couramment. Ce sont tout simplement des objets qui représentent du texte. Elles sont entre guillemets (ou apostrophes).
+Avec les nombres et les listes, les chaines de caractères sont les éléments informatiques qu'on utilise le plus couramment. 
+Ce sont tout simplement des objets qui représentent du texte. Elles sont délimitées par des guillemets (ou apostrophes).
 ```python   
-a="Ceci est une chaine de caractères"
-b="1+1"
-c=1+1
+texte = "Ceci est une chaine de caractères"
+calcul = "1 + 1"
+addition = 1 + 1
 ```
-Ainsi, a et b sont des chaines de caractères alors que c est un entier qui vaut 2.  
+Ainsi, `texte` et `calcul` sont de type chaines de caractères alors que `addition` est de type entier qui vaut 2.  
 
-Il y a énormément d'action possible sur les chaines de caractères, nous allons voir les principales.
+**Important**. En python, les chaînes de caractères sont des objets *immutables*, c'est-à-dire qu'il s'agit
+d'objet que l'on ne peut pas modifier ! En effet, nous verrons que les différents traitements sur les chaines 
+de caractères ne modifient jamais la chaîne de caractères elle-même, elles construisent une nouvelle chaîne de
+caractères à partir de l'ancienne. 
+
+Il y a énormément d'actions possibles sur les chaines de caractères, nous allons voir les principales.
+
 # Les actions de base
 
-+ `len(texte)` : Donne la longueur d'un texte.
-```python runnable
-print(len("abc def"))
-```
++ `len(texte)` : Donne la longueur de la chaîne de caractères `texte`.
+  ```python runnable
+  print(len("une chaîne de caractères"))
+  ```
 
-+ `texte[n]` : Affiche le n-ième terme du texte. Attention : la première lettre commence à l'indice 0 !  
-  Petite astuce : Si on veut commencer par la fin : texte[-1] est la dernière lettre, texte[-2] l'avant dernière etc.
++ `texte[n]` : Affiche le n-ième terme de la chaîne de caractères `texte`. 
+  **Attention**. La première lettre commence à l'indice 0 !  
+  **Astuce**. Si on veut commencer par la fin : `texte[-1]` est la dernière lettre, `texte[-2]` l'avant dernière, etc.
   ```python runnable
   print("Alea jacta est"[0])
   print("Alea jacta est"[5])
   print("Alea jacta est"[-1])
   ```
   
-+ `texte[debut : fin]` : Affiche les caractères de `texte` compris entre l'indice `debut` et l'indice `fin-1`.  
-  Attention ici aux pièges : la première lettre du texte correspond toujours à l'indice 0 et on ne prend pas la lettre d'indice `fin`.  
-  Astuce : Si on veut commencer du début du texte, on met juste `texte[:fin]`. De même si on veut aller jusqu'au dernier caractère, on mettra `texte[debut : ]`.
++ `texte[debut:fin]` : Affiche une partie de la chaîne de caractères. 
+  La sous-chaîne de caractères commence à l'indice `debut` 
+  et se termine à l'indice `fin-1`.  
+  **Attention**. La première lettre de la chaîne `texte` correspond toujours à l'indice 0 et on ne prend pas la lettre d'indice `fin`.  
+  **Astuce**. Si on veut commencer au début de la chaîne `texte`, on peut omettre l'indice de début : `texte[:fin]`. 
+  De même, si on veut aller jusqu'à la fin de la chaîne `texte`, on peut omettre l'indice de fin : `texte[debut:]`.
   ```python runnable
   print("Alea jacta est"[5:10])
   print("Alea jacta est"[:4])
   print("Alea jacta est"[5:])
   ```
   
-+ `texte1+texte2` : Concatène les deux textes c'est à dire les met bout à bout.
++ `texte1 + texte2` : Concatène les deux chaînes de caractères, c'est-à-dire les met bout à bout dans l'ordre d'apparition.
   ```python runnable
-  texte1="Vive"
-  texte2="Les Mathématiques"
-  print(texte1+texte2)
+  texte = "Vive "
+  suite = "les Mathématiques"
+  print(texte + suite)
   ```
-  On peut bien sûr enchainer les concaténations : texte1+texte2+texte3+...
+  On peut, bien sûr, enchainer les concaténations : `texte1 + texte2 + texte3 + ...`
   
-+ `str(objet)` : Transforme (quand c'est possible) l'`objet` en texte pour pouvoir l'utiliser comme un texte. Très utile pour rajouter des variables dans un texte par exemple ou récupérer les chiffres d'un nombre.
++ `str(objet)` : Transforme (quand c'est possible) l'`objet` en chaîne de caractères. 
+  Utile pour récupérer, par exemple, tous les chiffres d'un nombre séparément.
   ```python runnable
-  c = 1 + 1
-  print("La valeur de c est "+str(c))
-  
-  # On récupère le chiffre d'indice 4 c'est à dire le cinquième :
-  n = 133675184
-  chiffre = str(n)[4] 
-  print(chiffre)
+  # On récupère le chiffre d'indice 4, c'est-à-dire le cinquième :
+  nombre = 133675184
+  str_5e_chiffre = str(n)[4] 
+  print(f"Le cinquième chiffre du nombre {nombre} est {str_5e_chiffre}.)
   ```
-  Dans `c` il y a le résultat du calcul. `str(c)` transforme ce résultat en chaine de caractère contenant ce résultat. On le rajoute ensuite à la chaine `"La valeur de c est "`
-  Pour le deuxième exemple, on transforme le nombre `n`en chaine de caractère ce qui nous permet de récupérer les chiffres un à un sous forme de chaine de caractères. Si on veut les retransformer en nombre pour pouvoir faire des calculs par exemple, on pourra utiliser `int(chiffre)`.
+  Dans l'exemple, on transforme le nombre `nombre` en chaine de caractères 
+  ce qui nous permet de récupérer les chiffres un à un sous forme de chaine de caractères. 
+  Si on veut les retransformer en nombre pour pouvoir faire des calculs, par exemple, on pourra utiliser `int(str_5e_chiffre)`.
   
-+ `texte*k` : Crée une chaine de caractère dans laquelle on répète le texte k fois d'affilée.
++ `texte * k` : Crée une chaine de caractères dans laquelle on répète la chaîne de caractères `texte` `k` fois.
+  **Attention**. La variable `k` doit être de type entier !
   ```python runnable
   texte = "Monsieur, j'ai pas compris ! "
-  print(texte*5)
+  print(texte * 5)
   ```
   
-+ `sous_texte in texte` : Renvoie True si la chaine de caractère `sous_texte` est dans `texte` et False sinon.
-A utiliser par exemple comme condition avec if par exemple.
++ `sous_texte in texte` : Renvoie la valeur `True` si la chaine de caractère `sous_texte` est dans `texte` et `False` sinon.
+  À utiliser, par exemple, comme condition avec une structure alternative `if`.
   ```python runnable
-  texte = "C'est un trou de verdure où chante une rivière"
+  texte = "C'est un trou de verdure où chante une rivière."
   print("chante" in texte)
   print("dur" in texte)
   print("eau" in texte)
+  print("vers" in texte)
+  print("chanter" in texte)
   ```
-  On teste ici si les sous-textes "chante", "dur" et "eau" sont dans la chaine de caractères stockée dans `texte`.
+  On vérifie si les chaînes de caractères `"chante"`, `"dur"`, `"eau"`, `"vers"` et `"chanter"` sont dans la chaine de caractères stockée dans `texte`.
   
   Voici un exemple d'utilisation dans une structure conditionnelle : 
   ```python
   if lettre in "aeiouy":
-    print(lettre + " est une voyelle")
+    print(f"La lettre {lettre} est une voyelle.")
   else :
-    print(lettre + " n'est pas une voyelle")
+    print(f"La lettre {lettre} n'est pas une voyelle.")
   ```
-  Ce code permettrait par exemple de vérifier si la variable lettre est une voyelle ou pas.
+  Ce code permettrait par exemple de vérifier si la variable {lettre} est une voyelle ou pas.
   
-+ `for caractere in texte` : Nous permet de créer une boucle en énumérant les lettres de texte.
-  Par exemple si je veux afficher les chiffres d'un texte :
-  ```python runnable
-  texte="Quatre bonbons à 0,25 euro chacun coûtent un euro"
-  for caractere in texte:
-      if caractere in "0123456789":
-          print(caractere)
-  ```
-  Quelques explications : La boucle `for` va prendre le premier caractère de `texte` et le placer dans la variable `caractere` c'est à dire que `caractere` = 'Q'. Ensuite on teste si car fait partie des chiffres. Comme ce n'est pas le cas, et qu'il n'y a rien à faire dans ce cas, on revient à la boucle for avec la deuxième lettre cette fois et on recommence jusqu'au caractère "0" qui faire partie des chiffres donc on l'affiche etc.
-  
-+ Comparaisons de chaines de caractères : On peut comparer, comme pour les nombres, des chaines de caractères.
-  Le résultat de la comparaison est True ou False et peuvent donc s'utiliser comme condition avec if .
++ Comparaisons entre chaines de caractères : On peut comparer, comme pour les nombres, des chaines de caractères.
+  Le résultat de la comparaison est une booléen : `True` ou `False`.
+  Il peut donc s'utiliser comme condition avec une structure alternative `if` ou répétitive `while` .
   Voici les différentes comparaisons possibles :
-  - `texte1 == texte2` : Renvoie True si les deux textes sont parfaitement identiques.
-  - `texte1 != texte2` : Renvoie True si les deux textes ont au moins un caractère de différent.
-  - `texte1 < texte2` : Renvoie True si le `texte1` est strictement avant `texte2` dans l'ordre lexicographique (l'ordre du dictionnaire).
-  - `texte1 <= texte2` : Comme < mais les deux textes peuvent être les mêmes.
-  - `texte1 > texte2` : Renvoie True si le `texte1` est strictement après `texte2` dans l'ordre lexicographique (l'ordre du dictionnaire).
-  - `texte1 >= texte2` : Comme < mais les deux textes peuvent être les mêmes.
-  Pour ranger dans l'ordre lexicographique, on compare les deux premiers caractères de chaque texte. S'ils sont égaux, on compare le second etc.
-  Par exemple : "azerty"<"azfa" car les premiers termes de chaque chaines sont égaux. De même pour le second. Pour le troisième, comme "e"<"f", on a "azerty"<"azfa". (On ne regarde même pas la suite).
-  Ça fonctionne aussi pour les nombres dans une chaine de caractères : "1234"<"2". En effet, on les compare comme des chaines de caractères et non comme des nombres. On regarde le premier caractère : "1"<"2" donc "1234"<"2".
-  Pour être plus précis, pour comparer deux caractères, on compare en fait leur code ASCII (voir plus loin). Donc on a "1" < "A" < "_" < "a" par exemple.
-  
-# Fonctions plus spécifiques aux chaines de caractères
+  - `texte1 == texte2` : Renvoie `True` si la valeur des deux chaînes sont parfaitement identiques, `False` sinon.
+  - `texte1 != texte2` : Renvoie `True` si la valeur des deux chaînes ont au moins un caractère différent, `False` sinon.
+  - `texte1 < texte2` : Renvoie `True` si la valeur de la chaîne `texte1` précède la valeur de la chaîne `texte2` dans l'ordre lexicographique (l'ordre du dictionnaire).
+  - `texte1 <= texte2` : Comme `<` mais la valeur des deux chaînes peuvent être les mêmes.
+  - `texte1 > texte2` : Renvoie `True` si la valeur de la chaîne `texte1` suit la valeur de la chaîne `texte2` dans l'ordre lexicographique (l'ordre du dictionnaire).
+  - `texte1 >= texte2` : Comme `<` mais la valeur des deux chaînes peuvent être les mêmes.
 
-Ce sont des fonctions que l'on applique à une chaine de caractères et qui donc devront se mettre après la chaine de caractère à laquelle on l'applique en mettant un point entre.
+  Pour ranger dans l'ordre lexicographique, on compare les deux premiers caractères de chaque texte. S'ils sont égaux, on compare le deuxième, etc.
+  Par exemple : `"azerty" < "azfa"` car les premiers termes de chaque chaîne sont égaux. De même pour le deuxième. Pour le troisième, comme `"e" < "f"`, 
+  il en résultat que `"azerty" < "azfa"`. Il n'est pas nécessaire de regarder la suite.
+  
+  Ça fonctionne aussi pour les nombres dans une chaîne de caractères : `"1234" < "2"`. En effet, on les compare comme des chaines de caractères et non comme des nombres. On regarde le premier caractère : `"1" < "2"` donc `"1234" < "2"`.
 
-+ `.find(sous_chaine)` : Donne l'indice où se trouve pour la première fois `sous_chaine`.
-  ```python runnable
-  texte="J'ai posé ma brosse sur le bureau"
-  print(texte.find("brosse"))
-  print(texte.find("o"))
-  ```
-  On fera bien attention au fait que les indices commencent à 0 ! Le 'b' de brosse étant le 14e caractère, son indice est donc 13.
-  Pour le deuxième exemple, on voit que le "o" de brosse n'est pas pris en compte. La fonction find ne renvoie que l'indice du premier "o" qu'il rencontre.
-  
-+ `.count(sous_chaine)` : Donne le nombre de fois où `sous_chaine` se trouve dans la chaine à qui l'on applique la fonction.
-  ```python runnable
-  texte="J'ai posé ma brosse sur le bureau"
-  print(texte.count("os"))
-  print(texte.count("e"))
-  ```
-  Il y a 2 fois "os" dans texte et 3 "e". On remarquera que "é" n'est pas compté comme un "e".
-  
-+ `.replace(sous_chaine1, sous_chaine2)` : Remplace toutes les `sous_chaine1` par les `sous_chaine2`.
-  ```python runnable
-  texte= "Une foncttttion ttttrès prattttique si vous répéttttez ttttrop les tttt"
-  print(texte.replace("tttt","t"))
-  ```
-
-+ `.lower()`, `.upper()` : La première permet de mettre tout le texte en minuscule et la deuxième en majuscule.
-  Pas les plus utiles mais elles dépannent car pour Python, "e" est différent de "E". donc pour chercher les voyelles par exemple, il est plus simple de mettre d'abord tous le texte en minuscule sinon il faudra chercher parmi "aeiouyAEIOUY".
-  
+  Pour être plus précis, pour comparer deux caractères, on compare en fait leur code ASCII. 
+  Donc on a `"1" < "A" < "_" < "a"` par exemple.
 
 # QCM
 
@@ -190,20 +168,18 @@ print(texte[-2])
 -[x] "n"
 -[ ] "."
 
-
 ---
 
 ###### QCM 5
 ```python
 texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte[:2]+texte[6:8])
+print(texte[:2] + texte[6:8])
 ```  
 ?[Que va afficher ce programme ? ]
 -[ ] "Un sse" 
 -[ ] "Un ss"
 -[ ] "Unsse"
 -[x] "Unss"
-
 
 ---
 
@@ -221,45 +197,6 @@ print(...)
 ---
 
 ###### QCM 7
-```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(...)
-```  
-?[Que faut-il mettre à la place des ... pour afficher le nombre de "e" dans ce texte ? ]
--[x] texte.count("e")
--[ ] count("e")
--[ ] count(texte,"e")
--[ ] texte.count(e)
-
----
-
-###### QCM 8
-```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte.find("ch"))
-```  
-?[Que va afficher ce programme ? ]
--[x] 3
--[ ] 4
--[ ] 5
--[ ] 3, 13, 19, 39, 57
-
----
-
-###### QCM 9
-```python
-texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
-print(texte.replace("ss","ch"))
-```  
-?[Que va afficher ce programme ? ]
--[ ] "Un ssasseur sassant ssasser doit savoir ssasser sans son ssien."
--[ ] "Un chacheur sachant chacher doit savoir chacher sanchon chien."
--[ ] "Un chacheur chachant chacher doit chavoir chacher chanch chon chien."
--[x] "Un chacheur sachant chacher doit savoir chacher sans son chien."
-
----
-
-###### QCM 10
 ```python
 texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
 print("ch" in texte)
@@ -289,7 +226,7 @@ Pour l'affichage, on utilisera `print` et les chiffres seront affichés en allan
 
 ### Exercice 2
 
-Pour le texte donné dans la fenêtre ci-dessous, créer un programme qui affiche le nombre de voyelle.
+Pour le texte donné dans la fenêtre ci-dessous, créer un programme qui affiche le nombre de voyelles.
 
 Pour l'affichage, on utilisera `print`.
 

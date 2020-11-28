@@ -1,68 +1,139 @@
 <h1> <center>Compléments sur les chaines de caractères</center></h1>
 
-# Codage ASCII
+# Codage Unicode
 
-On va voir dans les exercices des problèmes de codage. Ce sont des problèmes classiques en programmation et pour cela, on a besoin de décaler des caractères par exemple ou de les mélanger. Il serait possible (mais forcément très long) d'expliquer ce que l'on fait pour chaque caractère et à chaque fois mais il existe une table 'universelle' qui associe à chaque caractère un numéro. C'est ce qu'on appelle la norme ASCII. On peut retrouver des explications et le tableau récapitulatif des correspondances ici par exemple : |Wikipédia : Norme ASCII](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange)  
-Dans cette table, le "a" correspond au numéro 97, le "A" au numéro 65...
-Il existe des fonctions en Python qui permettent de passer des caractères aux numéros correspondants :
-+ `ord(caractere)` : Donne le code ASCII du caractère.
+Grâce au codage Unicode chaque caractère existant dispose d'une code Unicode unique.
+
+Par exemple, 
++ la lettre "A" dispose du code Unicode (ou ASCII) 65.
++ la lettre "é" dispose du code Unicode 233.
++ le caractère "€" dispose du code Unicode 8364.
+
+Il existe des fonctions en Python qui permettent de passer des caractères à leur code Unicode :
++ `ord(caractere)` : Donne le code UNicode du caractère.
   ```python runnable
-  print(ord("a"))
   print(ord("A"))
-  print(ord("#"))
+  print(ord("é"))
+  print(ord("€"))
   ```
 
-+ `chr(numero)` : Donne le caractère correspondant au code ASCII.
++ `chr(code)` : Donne le caractère correspondant au code Unicode.
   ```python runnable
   print(chr(65))
-  print(chr(97))
-  print(chr(35))
+  print(chr(233))
+  print(chr(8364))
   ```
   
 Exemple d'utilisation : Je veux transformer un caractère en son suivant.
 ```python runnable
-car="e"
-numero=ord(car)
-nouveau_car=chr(numero+1)
-print(nouveau_car)
-```
-Expliquons un peu : On place "e" dans la variable `car`. On récupère son code ASCII et on le met dans la variable `numero`. On récupère le caractère suivant c'est à dire correspondant au code ASCII `numero+1`. Et on affiche le  caractère obtenu.  
-Bien sûr cet exemple utilise beaucoup trop de variables mais c'est pour détailler. On pourrait mettre directement `print(chr(ord(car)+1))` mais c'est moins clair... Et petite question pour finir cette partie : Qu'obtiendrait-on si on prenait car = "z" ?
-
-# Le formatage avec la fonction `format`
-
-Cette partie est très facultative. Elle intéressera ceux qui veulent approfondir leurs connaissances en programmation.  
-Le but de cette partie est de faire une présentation de la fonction `format`  des chaines de caractères. Il existe ce que l'on appelle les expressions régulières qui permettent de vérifier ou rechercher un certain formatage dans un texte (comme par exemple vérifier si le format d'un numéro de téléphone ou d'une adresse mail ou d'un numéro de carte bleue est valide) mais nous n'allons pas en parler ici.  
-Le formatage avec `format` s'applique comme un texte à trous que l'on complète avec des données que l'on peut formater. 
-
-Prenons l'exemple de 3 variables dont on veut afficher les valeurs dans un texte :
-```python runnable
-a=0.5
-b=2
-c=1/3
-print("Dans b il y a la valeur {1}, dans a il y a la valeur {0} et dans c la valeur {2}".format(a,b,c))
-```
-La fonction format va remplacer les accolades par les variables en respectant l'ordre : {0} sera remplacée par la valeur de la première variable donnée (ici a), {1} par b et {2} par c. Déjà on peut voir un intérêt pratique à la fonction car sinon pour obtenir le même résultat à la main, il aurait fallu écrire :
-`"Dans b il y a la valeur "+str(b)+" , dans a il y a la valeur "+str(a)+ " et dans c la valeur "+str(c)`.  
-Imaginez s'il y a 15 variables à insérer dans un texte dont certaines apparaissent plusieurs fois et ont un nom long à taper...
-
-Mais `format` permet en plus de formater ce que l'ont veut afficher. Par exemple si je veux afficher un nombre arrondi à deux chiffres significatifs après la virgule il suffit de rajouter `:.2g` dans les accolades concernées. Voici ce que cela donne :
-```python runnable
-a = 0.5
-b = 2
-c = 1/3
-print("Dans b il y a la valeur {1:.2g}, dans a il y a la valeur {0:.2g} et dans c la valeur {2:.2g}".format(a,b,c))
+caractere = "e"
+code_unicode = ord(caractere)
+caractere_suivant = chr(code_unicode + 1)
+print(caractere_suivant)
 ```
 
-Si par hasard on veut arrondir à deux chiffres après la virgule en gardant les 0 inutiles comme pour les prix par exemple, on utilise de la même façon `:.2f`.
-```python runnable
-a = 0.5
-b = 2
-c = 1/3
-print("Dans b il y a la valeur {1:.2f}, dans a il y a la valeur {0:.2f} et dans c la valeur {2:.2f}".format(a,b,c))
-```
+Expliquons un peu : 
+1. On place le caractère "e" dans la variable `caractere`. 
+2. On récupère son code unicode dans la variable `code_unicode`. 
+3. On récupère le caractère suivant, celui dont le code est `code_unicode + 1`. 
+   Et on l'enregistre dans la variable `caractere_suivant`.
+4. On affiche le caractère suivant `caractere_suivant`.
 
-Voici pour cette initiation à la fonction format. Si on veut aller plus loin (formatage de dates, personnalisés...), internet regorge d'information !
+Cet exemple utilise beaucoup de variables. 
+On pourrait écrire directement `print(chr(ord(caractere) + 1))` mais c'est moins clair... 
+Petite question pour terminer : Qu'obtiendrait-on si `caractere = "z"` ?
+
+  
+# Fonctions spécifiques aux chaines de caractères
+
+Ce sont des méthodes appliquées directement à une chaine de caractères.
+La notation est un peu particulière : Le nom de la chaîne de caractères à traiter sera suivie d'un point suivi du nom de la méthode.
+
++ `chaine.find(sous_chaine)` : Donne l'indice de la première apparition de `sous_chaine` dans la `chaine`.
+  ```python runnable
+  texte = "J'ai posé ma brosse sur le bureau."
+  print(texte.find("brosse"))
+  print(texte.find("o"))
+  ```
+  Le premier caractère est toujours situé à l'indice numéro 0 ! 
+  Dans la chaîne `texte`, le 'b' de brosse étant le 14e caractère, son indice est 13.
+  Pour le deuxième exemple, on voit que le "o" de "brosse" n'est pas pris en compte. 
+  La méthode `find` ne renvoie que l'indice du premier "o" qu'il rencontre.
+  
++ `chaine.count(sous_chaine)` : Donne le nombre d'occurrence de la chaîne `sous_chaine` dans la `chaine`.
+  ```python runnable
+  texte = "J'ai posé ma brosse sur le bureau."
+  print(texte.count("os"))
+  print(texte.count("e"))
+  ```
+  Il y a deux fois "os" dans la chaîne `texte` et trois "e". 
+  On remarquera que "é" n'est pas compté comme un "e".
+  
++ `chaine.replace(ancienne, nouvelle)` : Remplace toutes les chaînes `ancienne` par la chaîne `nouvelle`.
+  ```python runnable
+  texte = "Une foncttttion ttttrès prattttique si vous répéttttez ttttrop les tttt."
+  print(texte.replace("tttt","t"))
+  ```
+
++ `chaine.lower()` : retourne une nouvelle chaîne de caractères où tous les caractères de `chaine` ont été transformé en minuscule.
+  ```python runnable
+  upcase_and_lowcase = "HeLlo WoRlD !"
+  print(f"La chaîne {upcase_and_lowcase} en minuscule: {upcase_and_lowcase.lower()}")
+  upcase = "HELLO WORLD !
+  print(f"La chaîne {upcase} en minuscule: {upcase.lower()}")
+  lowcase = "hello world !
+  print(f"La chaîne {lowcase} en minuscule: {lowcase.lower()}")
+
++ `chaine.upper()` : retourne une nouvelle chaîne de caractères où tous les caractères de `chaine` ont été transformé en majuscule.
+  ```python runnable
+  upcase_and_lowcase = "HeLlo WoRlD !"
+  print(f"La chaîne {upcase_and_lowcase} en majuscule: {upcase_and_lowcase.upper()}")
+  upcase = "HELLO WORLD !
+  print(f"La chaîne {upcase} en majuscule: {upcase.upper()}")
+  lowcase = "hello world !
+  print(f"La chaîne {lowcase} en majuscule: {lowcase.upper()}")
+  
+
+# QCM
+
+Voici quelques QCM pour voir si vous avez bien compris. N'hésitez pas à relire ce qui précède si vous avez un doute.
+
+###### QCM 1
+```python
+texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(...)
+```  
+?[Que faut-il mettre à la place des ... pour afficher le nombre de "e" dans ce texte ? ]
+-[x] texte.count("e")
+-[ ] count("e")
+-[ ] count(texte,"e")
+-[ ] texte.count(e)
+
+---
+
+###### QCM 2
+```python
+texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(texte.find("ch"))
+```  
+?[Que va afficher ce programme ? ]
+-[x] 3
+-[ ] 4
+-[ ] 5
+-[ ] 3, 13, 19, 39, 57
+
+---
+
+###### QCM 3
+```python
+texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."
+print(texte.replace("ss","ch"))
+```  
+?[Que va afficher ce programme ? ]
+-[ ] "Un ssasseur sassant ssasser doit savoir ssasser sans son ssien."
+-[ ] "Un chacheur sachant chacher doit savoir chacher sanchon chien."
+-[ ] "Un chacheur chachant chacher doit chavoir chacher chanch chon chien."
+-[x] "Un chacheur sachant chacher doit savoir chacher sans son chien."
 
 # Entrainement 
 

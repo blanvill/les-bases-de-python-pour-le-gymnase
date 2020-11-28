@@ -62,6 +62,15 @@ for x in range(6):
         print((x,y))
 ```
 
++ `for caractere in texte` : Nous permet de créer une boucle en énumérant les lettres de texte.
+  Par exemple si je veux afficher les chiffres d'un texte :
+  ```python runnable
+  texte="Quatre bonbons à 0,25 euro chacun coûtent un euro"
+  for caractere in texte:
+      if caractere in "0123456789":
+          print(caractere)
+  ```
+  Quelques explications : La boucle `for` va prendre le premier caractère de `texte` et le placer dans la variable `caractere` c'est à dire que `caractere` = 'Q'. Ensuite on teste si car fait partie des chiffres. Comme ce n'est pas le cas, et qu'il n'y a rien à faire dans ce cas, on revient à la boucle for avec la deuxième lettre cette fois et on recommence jusqu'au caractère "0" qui faire partie des chiffres donc on l'affiche etc.
 
 # QCM
 

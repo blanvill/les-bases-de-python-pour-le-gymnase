@@ -69,14 +69,14 @@ Nous avons déjà vu comment affecter à des variables des valeurs. Il y a plusi
   ```python runnable
   x, y = 1, 4
   x, y = x + y, x - y
-  print(f"Résultat dans le premier cas : {x =} et {y =}")
+  print(f"Résultat dans le premier cas : {x = } et {y = }")
   x = 1
   y = 4
   x = x + y
   y = x - y
-  print(f"Résultat dans le second cas : {x =} et {y =}")
+  print(f"Résultat dans le second cas : {x = } et {y = }")
   ```
-  Explications : Dans le premier cas, Python calcule x+y et x-y puis stocke en mémoire. Dans le second cas, on calcule d'abord x+y et on stocke dans x ce qui veut dire que x vaut maintenant 5 puis calcule x-y (avec x=5 donc) puis stocke dans y. Le résultat n'est donc pas le même.  
+  **Explication**. Dans le premier cas, Python calcule `x + y` et `x - y` puis les stocke en mémoire. Dans le second cas, on calcule d'abord `x + y` et on stocke le résultat dans `x` ce qui veut dire que `x` vaut maintenant 5. Puis python calcule `x - y` (avec `x = 5`) puis stocke le résultat dans la variable `y`. Le résultat n'est donc pas le même !  
   Cette technique est très pratique par exemple pour intervertir les valeurs de certaines variables. Il suffit d'écrire `x, y = y, x`.
 
 # Deuxième partie : Compléments sur la fonction `print`
@@ -110,6 +110,41 @@ print("FG\nHI",end=" *hic!*\n")
 print("J\nK\nL\nM\nN\nO", end=" *hic!*\n")
 print("PQRSTUVWXYZ", end =" *BOUM !*")
 ```
+
+# Le formatage avec la fonction `format`
+
+Cette partie est très facultative. Elle intéressera ceux qui veulent approfondir leurs connaissances en programmation.  
+Le but de cette partie est de faire une présentation de la fonction `format`  des chaines de caractères. Il existe ce que l'on appelle les expressions régulières qui permettent de vérifier ou rechercher un certain formatage dans un texte (comme par exemple vérifier si le format d'un numéro de téléphone ou d'une adresse mail ou d'un numéro de carte bleue est valide) mais nous n'allons pas en parler ici.  
+Le formatage avec `format` s'applique comme un texte à trous que l'on complète avec des données que l'on peut formater. 
+
+Prenons l'exemple de 3 variables dont on veut afficher les valeurs dans un texte :
+```python runnable
+a=0.5
+b=2
+c=1/3
+print("Dans b il y a la valeur {1}, dans a il y a la valeur {0} et dans c la valeur {2}".format(a,b,c))
+```
+La fonction format va remplacer les accolades par les variables en respectant l'ordre : {0} sera remplacée par la valeur de la première variable donnée (ici a), {1} par b et {2} par c. Déjà on peut voir un intérêt pratique à la fonction car sinon pour obtenir le même résultat à la main, il aurait fallu écrire :
+`"Dans b il y a la valeur "+str(b)+" , dans a il y a la valeur "+str(a)+ " et dans c la valeur "+str(c)`.  
+Imaginez s'il y a 15 variables à insérer dans un texte dont certaines apparaissent plusieurs fois et ont un nom long à taper...
+
+Mais `format` permet en plus de formater ce que l'ont veut afficher. Par exemple si je veux afficher un nombre arrondi à deux chiffres significatifs après la virgule il suffit de rajouter `:.2g` dans les accolades concernées. Voici ce que cela donne :
+```python runnable
+a = 0.5
+b = 2
+c = 1/3
+print("Dans b il y a la valeur {1:.2g}, dans a il y a la valeur {0:.2g} et dans c la valeur {2:.2g}".format(a,b,c))
+```
+
+Si par hasard on veut arrondir à deux chiffres après la virgule en gardant les 0 inutiles comme pour les prix par exemple, on utilise de la même façon `:.2f`.
+```python runnable
+a = 0.5
+b = 2
+c = 1/3
+print("Dans b il y a la valeur {1:.2f}, dans a il y a la valeur {0:.2f} et dans c la valeur {2:.2f}".format(a,b,c))
+```
+
+Voici pour cette initiation à la fonction format. Si on veut aller plus loin (formatage de dates, personnalisés...), internet regorge d'information !
 
 # Troisième partie : Les nombres en Python et les erreurs d'arrondi
 
