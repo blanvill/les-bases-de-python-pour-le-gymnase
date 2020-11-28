@@ -11,12 +11,13 @@ La notation est un peu particulière : Le nom de la chaîne de caractères à tr
   print(texte.find("brosse"))
   print(texte.find("o"))
   ```
-  Le premier caractère est toujours situé à l'indice numéro 0 ! 
+  **Attention**. Le premier caractère est toujours situé à l'indice numéro 0 ! 
+  
   Dans la chaîne `texte`, le 'b' de brosse étant le 14e caractère, son indice est 13.
   Pour le deuxième exemple, on voit que le "o" de "brosse" n'est pas pris en compte. 
   La méthode `find` ne renvoie que l'indice du premier "o" qu'il rencontre.
   
-+ `chaine.count(sous_chaine)` : Donne le nombre d'occurrence de la chaîne `sous_chaine` dans la `chaine`.
++ `chaine.count(sous_chaine)` : Donne le nombre d'occurrences de la chaîne `sous_chaine` dans la `chaine`.
   ```python runnable
   texte = "J'ai posé ma brosse sur le bureau."
   print(texte.count("os"))
@@ -35,18 +36,18 @@ La notation est un peu particulière : Le nom de la chaîne de caractères à tr
   ```python runnable
   upcase_and_lowcase = "HeLlo WoRlD !"
   print(f"La chaîne {upcase_and_lowcase} en minuscule: {upcase_and_lowcase.lower()}")
-  upcase = "HELLO WORLD !
+  upcase = "HELLO WORLD !"
   print(f"La chaîne {upcase} en minuscule: {upcase.lower()}")
-  lowcase = "hello world !
+  lowcase = "hello world !"
   print(f"La chaîne {lowcase} en minuscule: {lowcase.lower()}")
 
 + `chaine.upper()` : retourne une nouvelle chaîne de caractères où tous les caractères de `chaine` ont été transformé en majuscule.
   ```python runnable
   upcase_and_lowcase = "HeLlo WoRlD !"
   print(f"La chaîne {upcase_and_lowcase} en majuscule: {upcase_and_lowcase.upper()}")
-  upcase = "HELLO WORLD !
+  upcase = "HELLO WORLD !"
   print(f"La chaîne {upcase} en majuscule: {upcase.upper()}")
-  lowcase = "hello world !
+  lowcase = "hello world !"
   print(f"La chaîne {lowcase} en majuscule: {lowcase.upper()}")
   
 

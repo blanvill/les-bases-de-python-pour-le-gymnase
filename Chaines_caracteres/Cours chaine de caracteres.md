@@ -141,21 +141,21 @@ Par exemple,
 **Remarque**. Les codes unicode utilisés par Python sont des nombres entiers exprimés en base décimale. Habituellement, les codes Unicode sont représentés en hexadécimal. Par exemple, le caractère "€" est représenté en Unicode par U+20AC.
 
 Il existe des fonctions en Python qui permettent de passer des caractères à leur code Unicode et vice-versa :
-+ `ord(caractere)` : Donne le code Unicode du caractère.
++ `ord(caractere)` : Donne le code Unicode du caractère donné.
   ```python runnable
   print(ord("A"))
   print(ord("é"))
   print(ord("€"))
   ```
 
-+ `chr(code)` : Donne le caractère correspondant au code Unicode.
++ `chr(code)` : Donne le caractère correspondant au code Unicode donné.
   ```python runnable
   print(chr(66))
   print(chr(234))
   print(chr(8365))
   ```
   
-Exemple d'utilisation : Je veux transformer un caractère en son suivant.
+**Exemple**. Je veux transformer un caractère en son suivant.
 ```python runnable
 caractere = "e"
 code_unicode = ord(caractere)
