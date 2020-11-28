@@ -40,7 +40,9 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
 + `chaine[debut:fin]` : Affiche une partie de la chaîne de caractères. 
   La sous-chaîne de caractères commence à l'indice `debut` 
   et se termine à l'indice `fin-1`.  
+  
   **Attention**. La première lettre de la chaîne `chaine` correspond toujours à l'indice 0 et on ne prend pas la lettre d'indice `fin`.  
+  
   **Astuce**. Si on veut commencer au début de la chaîne `chaine`, on peut omettre l'indice de début : `chaine[:fin]`. 
   De même, si on veut aller jusqu'à la fin de la chaîne `chaine`, on peut omettre l'indice de fin : `chaine[debut:]`.
   ```python runnable
@@ -55,6 +57,7 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   suite = "les Mathématiques"
   print(chaine + suite)
   ```
+  
   **Remarque**. Le dernier caractère de la chaîne `chaine` est un espace. Lors de la concaténation, les deux chaînes sont simplement mises bout à bout sans ajout de caractères supplémentaires.
 
   On peut, bien sûr, enchainer les concaténations : `chaine1 + chaine2 + chaine3 + ...`
@@ -73,7 +76,9 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   
 + `chaine * k` : Crée une chaine de caractères dans laquelle on répète la chaîne 
   de caractères `chaine` `k` fois.
+  
   **Attention**. La variable `k` doit être de type entier !
+  
   ```python runnable
   chaine = "Monsieur, j'ai pas compris ! "
   print(chaine * 5)
@@ -100,9 +105,12 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   ```
   Ce code permettrait par exemple de vérifier si la variable {lettre} est une voyelle ou pas.
   
-+ Comparaisons entre chaines de caractères : On peut comparer, comme pour les nombres, des chaines de caractères.
++ Comparaisons entre chaines de caractères : On peut comparer, comme pour les nombres, 
+  des chaines de caractères.
+  
   Le résultat de la comparaison est une booléen : `True` ou `False`.
   Il peut donc s'utiliser comme condition avec une structure alternative `if` ou répétitive `while` .
+
   Voici les différentes comparaisons possibles :
   - `chaine1 == chaine2` : Renvoie `True` si la valeur des deux chaînes sont parfaitement identiques, `False` sinon.
   - `chaine1 != chaine2` : Renvoie `True` si la valeur des deux chaînes ont au moins un caractère différent, `False` sinon.
