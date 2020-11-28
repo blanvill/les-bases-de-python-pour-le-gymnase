@@ -1,5 +1,19 @@
 <h1> <center>Compléments sur les chaines de caractères</center></h1>
 
+# Constantes spécifiques aux chaines de caractères
+
+Afin de ne pas avoir à initialiser des variables avec des valeurs bien connues, comme l'alphabet ou les chiffres de 0 à 9, Python nous en fournit.
+
+En passant par le module `string` (qui signifie *suite* ou *chaîne*), nous pouvons disposer des constantes suivantes : 
++ ascii_letters : contient toutes les lettres de l'alphabet en majuscule et en minuscule.
++ ascii_lowercase : contient toutes les lettres de l'alphabet en minuscule uniquement.
++ ascii_uppercase : contient toutes les lettres de l'alphabet en majuscule uniquement.
++ digits : contient tous les chiffres de 0 à 9.
++ hexdigits : contient tous les chiffres de la base hexadécimale, de 0 à F. Les lettres sont présentes en minuscule et en majuscule.
++ whitespace : contient tous les caractères considérés comme des espaces. Sont inclus les caractères espace, tabulations, saut de ligne, retour du chariot, saut de page, et tabulation verticale.
+
+[https://docs.python.org/fr/3.8/library/string.html?highlight=string#module-string]Lien vers la documentation du module string de Python (version 3.8).
+
 # Fonctions spécifiques aux chaines de caractères
 
 Ce sont des méthodes appliquées directement à une chaine de caractères.
