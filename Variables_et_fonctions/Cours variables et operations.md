@@ -15,14 +15,16 @@ c = b + a + 2
 Dans cet exemple, on a mis en mémoire trois variables. Dans `a`, on a stocké la valeur 3, dans `b` la valeur 7 et dans `c` la valeur 12. 
 **Remarque importante** : ce qui est stocké est le *résultat du calcul* et non le calcul. Ce qui veut dire que si on modifie la valeur de `a`, la variable `c` gardera la valeur 12.
 
-Pour afficher la valeur d'une variable, on utilise la fonction `print`. Appuyez sur le bouton Run pour voir l'effet du code ci-dessous :
+Pour afficher la valeur d'une variable, on utilise la fonction `print()`.
+
+Appuyez sur le bouton Run pour voir l'effet du code ci-dessous :
 ```python runnable
 a = 3
 b = 7
 c = b + a + 2
 print(c)
 ```
-On voit s'afficher la valeur de `c`. 
+On voit s'afficher la valeur de `c`. Les trois premières instructions (les affectations de `a`, `b` et `c`) se passent dans la mémoire de l'ordinateur. Pour voir, à l'écran, la valeur d'une variable ou un texte quelconque, l'utilisation de la fonction `print()` est obligatoire.
 
 >**Fondamental**. 
 On peut utiliser une certaine variable `a` pour faire un calcul et stocker la réponse de nouveau dans `a` ce qui aura pour effet de faire disparaitre la première valeur de `a`. C'est très pratique pour éviter d'utiliser trop de variables différentes par exemple.
