@@ -138,7 +138,7 @@ Par exemple,
 + la lettre "é" dispose du code Unicode 233.
 + le caractère "€" dispose du code Unicode 8364.
 
-**Remarque**. Les codes unicodes utilisés par Python sont des nombres entiers exprimés en base décimale. Habituellement, les codes Unicode sont représentés en hexadécimal.
+**Remarque**. Les codes unicode utilisés par Python sont des nombres entiers exprimés en base décimale. Habituellement, les codes Unicode sont représentés en hexadécimal. Par exemple, le caractère "€" est représenté en Unicode par U+20AC.
 
 Il existe des fonctions en Python qui permettent de passer des caractères à leur code Unicode et vice-versa :
 + `ord(caractere)` : Donne le code Unicode du caractère.
