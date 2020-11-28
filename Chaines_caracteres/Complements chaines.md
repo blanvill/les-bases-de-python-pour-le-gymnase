@@ -35,20 +35,20 @@ La notation est un peu particulière : Le nom de la chaîne de caractères à tr
 + `chaine.lower()` : retourne une nouvelle chaîne de caractères où tous les caractères de `chaine` ont été transformé en minuscule.
   ```python runnable
   upcase_and_lowcase = "HeLlo WoRlD !"
-  print(f"La chaîne {upcase_and_lowcase} en minuscule: {upcase_and_lowcase.lower()}")
+  print(f"La chaîne '{upcase_and_lowcase}' en minuscule: {upcase_and_lowcase.lower()}")
   upcase = "HELLO WORLD !"
-  print(f"La chaîne {upcase} en minuscule: {upcase.lower()}")
+  print(f"La chaîne '{upcase}' en minuscule: {upcase.lower()}")
   lowcase = "hello world !"
-  print(f"La chaîne {lowcase} en minuscule: {lowcase.lower()}")
+  print(f"La chaîne '{lowcase}' en minuscule: {lowcase.lower()}")
 
 + `chaine.upper()` : retourne une nouvelle chaîne de caractères où tous les caractères de `chaine` ont été transformé en majuscule.
   ```python runnable
   upcase_and_lowcase = "HeLlo WoRlD !"
-  print(f"La chaîne {upcase_and_lowcase} en majuscule: {upcase_and_lowcase.upper()}")
+  print(f"La chaîne '{upcase_and_lowcase}' en majuscule: {upcase_and_lowcase.upper()}")
   upcase = "HELLO WORLD !"
-  print(f"La chaîne {upcase} en majuscule: {upcase.upper()}")
+  print(f"La chaîne '{upcase}' en majuscule: {upcase.upper()}")
   lowcase = "hello world !"
-  print(f"La chaîne {lowcase} en majuscule: {lowcase.upper()}")
+  print(f"La chaîne '{lowcase}' en majuscule: {lowcase.upper()}")
   
 
 # QCM
