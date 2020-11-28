@@ -56,7 +56,7 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   print(chaine + suite)
   ```
   **Remarque**. Le dernier caractère de la chaîne `chaine` est un espace. Lors de la concaténation, les deux chaînes sont simplement mises bout à bout sans ajout de caractères supplémentaires.
-  
+
   On peut, bien sûr, enchainer les concaténations : `chaine1 + chaine2 + chaine3 + ...`
   
 + `str(objet)` : Transforme (quand c'est possible) l'`objet` en chaîne de caractères. 
@@ -64,7 +64,7 @@ Il y a énormément d'actions possibles sur les chaines de caractères, nous all
   ```python runnable
   # On récupère le chiffre d'indice 4, c'est-à-dire le cinquième :
   nombre = 133675184
-  str_5e_chiffre = str(n)[4] 
+  str_5e_chiffre = str(nombre)[4] 
   print(f"Le cinquième chiffre du nombre {nombre} est {str_5e_chiffre}.")
   ```
   Dans l'exemple, on transforme le nombre `nombre` en chaine de caractères 
