@@ -29,7 +29,7 @@ plan:
   - title: 3. Listes
     statement: Les_listes/Cours listes.md
   - title: 4. Encore des listes
-    statement: Les_listes/Cours listes suite.md
+    statement: Les_listes/Cours complements listes.md
   - title: 5. Manipulations de base
     statement: Les_listes/Manipulations de base.md
 - title: Cours
