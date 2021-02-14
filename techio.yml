@@ -29,29 +29,27 @@ plan:
   - title: 3. Listes
     statement: Les_listes/Cours listes.md
   - title: 4. Encore des listes
-    statement: Les_listes/Cours complements listes.md
+    statement: Les_listes/Complements listes.md
   - title: 5. Manipulations de base
     statement: Les_listes/Manipulations de base.md
-- title: Cours
+- title: Niveau Term
   plan:
-  - title: Cours - Compléments sur les fonctions
+  - title: 1. Compléments sur les fonctions
     statement: Les_fonctions/Cours fonctions.md
+  - title: 2. Les classes
+    statement: Cours/Classes.md
 - title: Les modules Python
   plan:
-  - title: Cours - Module math
+  - title: Module math
     statement: Variables_et_fonctions/Cours module math.md
-  - title: Cours - Module random
+  - title: Module random
     statement: Maths/Cours module random.md
-  - title: Cours - Module matplotlib
+  - title: Module matplotlib
     statement: Maths/Cours module matplotlib.md
   - title: Compléments sur le module matplotlib
     statement: Maths/Complements_matplotlib.md
-  - title: Cours - Régressions linéaires et d'ordres supérieurs
+  - title: Régressions linéaires et d'ordres supérieurs
     statement: Maths/Regression.md
-- title: Programmation Orientée Objet
-  plan:
-  - title: Cours - Les classes en Python
-    statement: Cours/Classes.md
 - title: Classe de Seconde
   plan:
   - title: Introduction
@@ -302,8 +300,6 @@ plan:
     statement: Projets/Sudoku.md
 - title: Forum des Mathématiques
   plan:
-  - title: ''
-    statement: Autre/nim_fibonacci.md
   - title: Jeu de nim - Marienbad
     statement: Autre/nim_marienbad.md
   - title: Epicycloides et Transformée de Fourier
