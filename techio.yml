@@ -4,8 +4,6 @@ plan:
   plan:
   - title: Présentation
     statement: markdowns/welcome.md
-  - title: Bac à sable
-    statement: markdowns/Bac a sable.md
 - title: Cours
   plan:
   - title: Cours - Variables et opérations
