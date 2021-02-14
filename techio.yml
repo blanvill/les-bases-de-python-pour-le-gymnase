@@ -1,6 +1,5 @@
 title: Apprendre les bases de Python pour réussir en N.S.I.
 plan:
-- title: Présentation
   plan:
   - title: Présentation
     statement: markdowns/welcome.md
@@ -16,14 +15,8 @@ plan:
     statement: Les_boucles/Cours boucles while.md
   - title: 5- Boucles For
     statement: Les_boucles/presentation_for.md
-  - title: 6- Les chaînes de caractères
-    statement: Chaines_caracteres/Cours chaine de caracteres.md
-  - title: 7- Compléments sur les chaînes de caractères
-    statement: Chaines_caracteres/Complements chaines.md
   - title: 8- Les fonctions
     statement: Variables_et_fonctions/Cours introduction fonction.md
-  - title: 9- Compléments sur les fonctions
-    statement: Les_fonctions/Cours fonctions.md  
 - title: Cours
   plan:
   - title: Cours - Variables et opérations
