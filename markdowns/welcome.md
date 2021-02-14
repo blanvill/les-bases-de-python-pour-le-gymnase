@@ -1,6 +1,6 @@
 # Présentation
 
-Bienvenue dans ce recueil d'exercices pour apprendre Python dans le secondaire.
+Bienvenue dans ce recueil d'exercices pour prendre en main Python.
 
 Le but de ce recueil est de regrouper des exercices à travailler en autonomie, en classe ou à la maison, dans le but d'apprendre progressivement le langage Python.
 
