@@ -5,17 +5,17 @@ plan:
     statement: markdowns/welcome.md
 - title: Niveau 2nde
   plan:
-  - title: 1- Variables et opérations
+  - title: 1. Variables et opérations
     statement: Variables_et_fonctions/Cours variables et operations.md
-  - title: 2- Compléments sur les variables
+  - title: 2. Compléments sur les variables
     statement: Variables_et_fonctions/Complements.md
-  - title: 3- Instructions conditionnelles
+  - title: 3. Instructions conditionnelles
     statement: Les_conditions/Cours conditions.md
-  - title: 4- Boucles While
+  - title: 4. Boucles While
     statement: Les_boucles/Cours boucles while.md
-  - title: 5- Boucles For
+  - title: 5. Boucles For
     statement: Les_boucles/presentation_for.md
-  - title: 8- Les fonctions
+  - title: 6. Les fonctions
     statement: Variables_et_fonctions/Cours introduction fonction.md
 - title: Cours
   plan:
