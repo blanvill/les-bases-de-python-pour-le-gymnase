@@ -300,7 +300,7 @@ plan:
     statement: Projets/Sudoku.md
 - title: Forum des Mathématiques
   plan:
-  - title: Jeu de nim - Fibonacci
+  - title: ''
     statement: Autre/nim_fibonacci.md
   - title: Jeu de nim - Marienbad
     statement: Autre/nim_marienbad.md
