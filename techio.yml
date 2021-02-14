@@ -8,7 +8,7 @@ plan:
   plan:
   - title: 1. Variables et opérations
     statement: Variables_et_fonctions/Cours variables et operations.md
-  - title: 2. Compléments sur les variables
+  - title: 2. Encore des variables
     statement: Variables_et_fonctions/Complements.md
   - title: 3. Instructions conditionnelles
     statement: Les_conditions/Cours conditions.md
@@ -16,34 +16,24 @@ plan:
     statement: Les_boucles/Cours boucles while.md
   - title: 5. Boucles For
     statement: Les_boucles/presentation_for.md
-  - title: 6. Les fonctions
+  - title: 6. Compléments
+    statement: Les_boucles/Complements boucles.md
+  - title: 7. Les fonctions
     statement: Variables_et_fonctions/Cours introduction fonction.md
+- title: Niveau 1ère
+  plan:
+  - title: 1. Chaînes de caractères
+    statement: Chaines_caracteres/Cours chaine de caracteres.md
+  - title: 2. Compléments sur les chaines de caractères
+    statement: Chaines_caracteres/Complements chaines.md
+  - title: 3. Listes
+    statement: Les_listes/Cours listes.md
+  - title: 4. Encore des listes
+    statement: Les_listes/Cours listes suite.md
+  - title: 5. Manipulations de base
+    statement: Les_listes/Manipulations de base.md
 - title: Cours
   plan:
-  - title: Cours - Variables et opérations
-    statement: Variables_et_fonctions/Cours variables et operations.md
-  - title: Compléments sur les variables et opérations
-    statement: Variables_et_fonctions/Complements.md
-  - title: Cours - Les conditions
-    statement: Les_conditions/Cours conditions.md
-  - title: Cours - Les boucles while
-    statement: Les_boucles/Cours boucles while.md
-  - title: Cours - Les boucles for
-    statement: Les_boucles/presentation_for.md
-  - title: Compléments sur les boucles
-    statement: Les_boucles/Complements boucles.md
-  - title: Cours - Les chaines de caractères
-    statement: Chaines_caracteres/Cours chaine de caracteres.md
-  - title: Compléments sur les chaines de caractères
-    statement: Chaines_caracteres/Complements chaines.md
-  - title: Cours - Les listes
-    statement: Les_listes/Cours listes.md
-  - title: Cours - Les listes (suite)
-    statement: Les_listes/Complements listes.md
-  - title: Manipulations de base
-    statement: Les_listes/Manipulations de base.md
-  - title: Cours - Introduction aux fonctions
-    statement: Variables_et_fonctions/Cours introduction fonction.md
   - title: Cours - Compléments sur les fonctions
     statement: Les_fonctions/Cours fonctions.md
 - title: Les modules Python
