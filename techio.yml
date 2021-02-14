@@ -8,29 +8,29 @@ plan:
   plan:
   - title: 1. Variables et opérations
     statement: Variables_et_fonctions/Cours variables et operations.md
-  - title: 2. Encore des variables
-    statement: Variables_et_fonctions/Complements.md
-  - title: 3. Instructions conditionnelles
+  - title: 2. Instructions conditionnelles
     statement: Les_conditions/Cours conditions.md
-  - title: 4. Boucles While
+  - title: 3. Boucles While
     statement: Les_boucles/Cours boucles while.md
-  - title: 5. Boucles For
+  - title: 4. Boucles For
     statement: Les_boucles/presentation_for.md
-  - title: 6. Compléments
+  - title: 5. Compléments
     statement: Les_boucles/Complements boucles.md
-  - title: 7. Les fonctions
+  - title: 6. Les fonctions
     statement: Variables_et_fonctions/Cours introduction fonction.md
 - title: Niveau 1ère
   plan:
-  - title: 1. Chaînes de caractères
+  - title: 1. Compléments sur les variables
+    statement: Variables_et_fonctions/Complements.md
+  - title: 2. Chaînes de caractères
     statement: Chaines_caracteres/Cours chaine de caracteres.md
-  - title: 2. Compléments sur les chaines de caractères
+  - title: 3. Compléments sur les chaines de caractères
     statement: Chaines_caracteres/Complements chaines.md
-  - title: 3. Listes
+  - title: 4. Listes
     statement: Les_listes/Cours listes.md
-  - title: 4. Encore des listes
+  - title: 5. Encore des listes
     statement: Les_listes/Complements listes.md
-  - title: 5. Manipulations de base
+  - title: 6. Manipulations de base
     statement: Les_listes/Manipulations de base.md
 - title: Niveau Term
   plan:
