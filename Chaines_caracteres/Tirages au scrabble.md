@@ -6,6 +6,6 @@ Créer un programme qui affiche si le tirage donné est "VALIDE" ou "NON VALIDE"
 
 > Entrée : Un ***tirage*** de lettres sous forme d'une seule chaine de caractère.
 
-> Sortie : Afficher "VALIDE" si le ***tirage*** contient 7 lettres dont au moins 2 voyelles et 2 consonnes ou alors "NON VALIDE".
+> Sortie : Renvoie la chaîne de caractères "VALIDE" si le ***tirage*** contient 7 lettres dont au moins 2 voyelles et 2 consonnes ou alors "NON VALIDE".
 
 @[Tirages valides au Scrabble]({"stubs": ["Chaines_caracteres/Scrabble.py"], "command": "python3 Chaines_caracteres/Scrabble_Test.py"})
