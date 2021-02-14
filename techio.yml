@@ -1,7 +1,9 @@
 title: Apprendre les bases de Python pour réussir en N.S.I.
 plan:
-- title: Présentation
-  statement: markdowns/welcome.md
+- title: Introduction
+  plan:
+  - title: Présentation
+    statement: markdowns/welcome.md
 - title: Niveau 2nde
   plan:
   - title: 1. Variables et opérations
