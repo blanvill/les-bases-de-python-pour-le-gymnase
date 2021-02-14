@@ -4,6 +4,26 @@ plan:
   plan:
   - title: Présentation
     statement: markdowns/welcome.md
+- title: Niveau 2nde
+  plan:
+  - title: 1- Variables et opérations
+    statement: Variables_et_fonctions/Cours variables et operations.md
+  - title: 2- Compléments sur les variables
+    statement: Variables_et_fonctions/Complements.md
+  - title: 3- Instructions conditionnelles
+    statement: Les_conditions/Cours conditions.md
+  - title: 4- Boucles While
+    statement: Les_boucles/Cours boucles while.md
+  - title: 5- Boucles For
+    statement: Les_boucles/presentation_for.md
+  - title: 6- Les chaînes de caractères
+    statement: Chaines_caracteres/Cours chaine de caracteres.md
+  - title: 7- Compléments sur les chaînes de caractères
+    statement: Chaines_caracteres/Complements chaines.md
+  - title: 8- Les fonctions
+    statement: Variables_et_fonctions/Cours introduction fonction.md
+  - title: 9- Compléments sur les fonctions
+    statement: Les_fonctions/Cours fonctions.md  
 - title: Cours
   plan:
   - title: Cours - Variables et opérations
