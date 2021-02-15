@@ -1,4 +1,4 @@
-<h1> <center>Cours : Les Tuples </center></h1>
+<h1><center>Cours : Les Tuples</center></h1>
 
 Auparavant, nous avons déjà rencontré un type de donnée construit : les tableaux,  implémentés par le type `list` en Python. Il existe d'autres séquences en Python : les __tuples__ en sont un exemple.
 
