@@ -114,30 +114,26 @@ def ma_fonction(x) :
 
 ###### QCM 2
 ```python
-a = 5
-a = a - 2
-a = a * a + 1
-print(a)
-```  
-?[Quelle valeur sera affichée si on execute le programme ci-dessus ? ]
--[ ] 16
--[ ] 26
--[ ] 12
--[x] 10
+mon_tuple = (4,5,3,7,8)
+```
+
+?[L'instruction `mon_tuple[2] = 4` :]
+* [ ] remplace l'élément `2` par `4`
+* [x] léve une exception
+* [ ] remplace par `4` l'élément d'indice __2__ 
+* [ ] remplace l'élément `5` par `4`
+
 
 ---
 
 ###### QCM 3
-```python
-a = 7
-b = a - 1
-print((b / 2)**2)
-```
-?[Quelle valeur sera affichée si on execute le programme ci-dessus ? ]
--[ ] 6.0
--[ ] 1.5
--[x] 9.0
--[ ] -0.25  
+Soit la liste suivante : `notes_eleves = [('Marie', 10), ('Lucas', 15), ('Lea', 19), ('Theo', 8)]`
+?[Quel est le type de `notes_eleves` ?]
+* [ ] int
+* [x] list
+* [ ] tuple
+* [ ] autre chose
+
 
 ---
 
