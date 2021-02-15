@@ -93,4 +93,79 @@ quotient, reste = division(5, 2)
 ```
 Ici la valeur de retour est un tuple. Lorsqu'on appelle la fonction, il suffit de disperser le tuple pour récupérer le `quotient` et le `reste` dans deux variables indépendantes.
 
+# Questionnaire QCM
+
+Voici quelques QCM pour voir si vous avez bien compris. N'hésitez pas à relire ce qui précède si vous avez un doute.
+
+###### QCM 1
+```python
+def ma_fonction(x) :
+    a = x * 2
+    b = x * 3
+```
+?[Pour la fonction ci-dessus, quel code python ne permet pas de renvoyer un 2-uplet (_couple_) contenant a et b ?]
+-[] `return a, b`
+-[] `return (a, b)`
+-[] `return (b, a)`
+-[x] `return [a, b]`
+
+
+---
+
+###### QCM 2
+```python
+a = 5
+a = a - 2
+a = a * a + 1
+print(a)
+```  
+?[Quelle valeur sera affichée si on execute le programme ci-dessus ? ]
+-[ ] 16
+-[ ] 26
+-[ ] 12
+-[x] 10
+
+---
+
+###### QCM 3
+```python
+a = 7
+b = a - 1
+print((b / 2)**2)
+```
+?[Quelle valeur sera affichée si on execute le programme ci-dessus ? ]
+-[ ] 6.0
+-[ ] 1.5
+-[x] 9.0
+-[ ] -0.25  
+
+---
+
+##### QCM 4
+```python
+a = 3
+b = a + 1
+print((a**2 + b**2)**0.5)
+```
+?[Quelle valeur sera affichée si on execute le programme ci-dessus ? ]
+-[x] 5.0
+-[ ] 13.0
+-[ ] 12.5
+-[ ] 7.0
+
+---
+
+###### QCM 5
+```python
+a = 22
+b = 5
+print((a // b) + (a % b))
+```
+?[Quelle valeur sera affichée si on execute le programme ci-dessus ? ]
+-[ ] 6.4
+-[ ] 4.4
+-[x] 6
+-[ ] 114.4 
+
+
 
