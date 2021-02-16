@@ -1,6 +1,6 @@
 # Le jeu du pendu
 `Prérequis principaux : conditions, boucles et chaines de caractères`  
-`Difficulté : Facile`
+`Difficulté : Moyenne`
 
 Le but de ce TP est de créer des fonctions auxiliaires pour pouvoir créer, au final, un jeu du pendu.
 
