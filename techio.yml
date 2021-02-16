@@ -58,6 +58,10 @@ plan:
   plan:
   - title: 1. Le pendu
     statement: TP/Pendu.md
+  - title: 2. Manipulations d'images
+    statement: Info/manipulations_images.md
+  - title: 3. Manipulations d'images (suite)
+    statement: Info/manipulations_images2.md
 
 projects:
   python:
