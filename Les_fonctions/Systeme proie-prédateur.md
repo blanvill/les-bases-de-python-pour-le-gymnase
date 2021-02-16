@@ -1,5 +1,6 @@
 # Etude d'un systeme proie-prédateur (Modèle discret de Lotka-Volterra)
-`Difficulté : Moyenne`
+`Prérequis principal : recurrence  
+Difficulté : Moyenne`
 
 ### Modélisation
 
