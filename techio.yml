@@ -63,7 +63,7 @@ plan:
   - title: 3. Manipulations d'images (suite)
     statement: Info/manipulations_images2.md
   - title: 4. Système Proies / Prédateurs
-    statement: Les_fonctions/Systeme%20proie-prédateur.md
+    statement: Les_fonctions/Systeme proie-prédateur.md
 
 projects:
   python:
