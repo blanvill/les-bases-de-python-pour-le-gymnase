@@ -54,6 +54,10 @@ plan:
     statement: Maths/Complements_matplotlib.md
   - title: Régressions linéaires et d'ordres supérieurs
     statement: Maths/Regression.md
+- title: Entrainement
+  plan:
+  - title: 1. Le pendu
+    statement: TP/Pendu.md
 
 projects:
   python:
