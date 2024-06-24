@@ -18,8 +18,6 @@ plan:
     statement: Les_boucles/Complements boucles.md
   - title: 6. Les fonctions
     statement: Variables_et_fonctions/Cours introduction fonction.md
-  - title: 7. Résumé
-    statement: Cours/resume/resume.md
 - title: 2e année
   plan:
   - title: 1. Compléments sur les variables
