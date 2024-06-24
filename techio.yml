@@ -1,10 +1,10 @@
-title: Les bases de Python pour le lycée
+title: Les bases de Quorum pour le gymnase
 plan:
 - title: Introduction
   plan:
   - title: Présentation
     statement: markdowns/welcome.md
-- title: Niveau 2nde
+- title: 1er année
   plan:
   - title: 1. Variables et opérations
     statement: Variables_et_fonctions/Cours variables et operations.md
@@ -20,7 +20,7 @@ plan:
     statement: Variables_et_fonctions/Cours introduction fonction.md
   - title: 7. Résumé
     statement: Cours/resume/resume.md
-- title: Niveau 1ère
+- title: 2e année
   plan:
   - title: 1. Compléments sur les variables
     statement: Variables_et_fonctions/Complements.md
@@ -36,35 +36,8 @@ plan:
     statement: Les_listes/Manipulations de base.md
   - title: 7. Tuples
     statement: Vrac/tuples.md
-- title: Niveau Term
-  plan:
-  - title: 1. Compléments sur les fonctions
+  - title: 8. Compléments sur les fonctions
     statement: Les_fonctions/Cours fonctions.md
-  - title: 2. Les classes
-    statement: Cours/Classes.md
-- title: Les modules Python
-  plan:
-  - title: Module math
-    statement: Variables_et_fonctions/Cours module math.md
-  - title: Module random
-    statement: Maths/Cours module random.md
-  - title: Module matplotlib
-    statement: Maths/Cours module matplotlib.md
-  - title: Compléments sur le module matplotlib
-    statement: Maths/Complements_matplotlib.md
-  - title: Régressions linéaires et d'ordres supérieurs
-    statement: Maths/Regression.md
-- title: Entrainement
-  plan:
-  - title: 1. Le pendu
-    statement: TP/Pendu.md
-  - title: 2. Manipulations d'images
-    statement: Info/manipulations_images.md
-  - title: 3. Manipulations d'images (suite)
-    statement: Info/manipulations_images2.md
-  - title: 4. Système Proies / Prédateurs
-    statement: Les_fonctions/Systeme proie-prédateur.md
-
 projects:
   python:
     buildCommand: pip install numpy matplotlib Pillow; pip install scipy numba
