@@ -34,9 +34,7 @@ plan:
     statement: Les_listes/Complements listes.md
   - title: 6. Manipulations de base
     statement: Les_listes/Manipulations de base.md
-  - title: 7. Tuples
-    statement: Vrac/tuples.md
-  - title: 8. Compléments sur les fonctions
+  - title: 7. Compléments sur les fonctions
     statement: Les_fonctions/Cours fonctions.md
 projects:
   python:
